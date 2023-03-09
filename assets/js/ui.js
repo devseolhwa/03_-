@@ -9,6 +9,16 @@ $(document).ready(function(){
         svgEffect();
     });
 
+    let filter = "win16|win32|win64|mac";
+    if(navigator.platform){
+        if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+            //alert("Mobile");
+        }else{
+            //alert("PC");
+            snapscroll();
+        }
+    }
+
     function svgEffect(){
         $(".svgEffect").each(function(){
             let $this = $(this);
@@ -103,48 +113,50 @@ $(document).ready(function(){
     });
 
     // 스냅스크롤
-    const sections = document.querySelectorAll(".section");
-    const scrolling = {
-        enabled: true,
-        events: "scroll, wheel, touchmove, pointermove".split(","),
-        prevent: e => e.preventDefault(),
-        disable() {
-        if (scrolling.enabled) {
-            scrolling.enabled = false;
-            window.addEventListener("scroll", gsap.ticker.tick, {passive: true});
-            scrolling.events.forEach((e, i) => (i ? document : window).addEventListener(e, scrolling.prevent, {passive: false}));
-        }
-        },
-        enable() {
-        if (!scrolling.enabled) {
-            scrolling.enabled = true;
-            window.removeEventListener("scroll", gsap.ticker.tick);
-            scrolling.events.forEach((e, i) => (i ? document : window).removeEventListener(e, scrolling.prevent));
-        }
-        }
-    };
-    function goToSection(section, anim, i) {
-        if (scrolling.enabled) {
-            scrolling.disable();
-            gsap.to(window, {
-                scrollTo: {y: section, autoKill: false},
-                onComplete: scrolling.enable,
-                duration: 1
-            });
+    function snapscroll(){
+        const sections = document.querySelectorAll(".section");
+        const scrolling = {
+            enabled: true,
+            events: "scroll, wheel, touchmove, pointermove".split(","),
+            prevent: e => e.preventDefault(),
+            disable() {
+            if (scrolling.enabled) {
+                scrolling.enabled = false;
+                window.addEventListener("scroll", gsap.ticker.tick, {passive: true});
+                scrolling.events.forEach((e, i) => (i ? document : window).addEventListener(e, scrolling.prevent, {passive: false}));
+            }
+            },
+            enable() {
+            if (!scrolling.enabled) {
+                scrolling.enabled = true;
+                window.removeEventListener("scroll", gsap.ticker.tick);
+                scrolling.events.forEach((e, i) => (i ? document : window).removeEventListener(e, scrolling.prevent));
+            }
+            }
+        };
+        function goToSection(section, anim, i) {
+            if (scrolling.enabled) {
+                scrolling.disable();
+                gsap.to(window, {
+                    scrollTo: {y: section, autoKill: false},
+                    onComplete: scrolling.enable,
+                    duration: 1
+                });
 
-            anim && anim.restart();
+                anim && anim.restart();
+            }
         }
-    }
-    sections.forEach((section, i) => {
-        ScrollTrigger.create({
-            trigger: section,
-            start: "top bottom-=1",
-            end: "bottom top+=1",
-            //onEnter: () => goToSection(section, intoAnim),
-            onEnter: () => goToSection(section),
-            onEnterBack: () => goToSection(section)
+        sections.forEach((section, i) => {
+            ScrollTrigger.create({
+                trigger: section,
+                start: "top bottom-=1",
+                end: "bottom top+=1",
+                //onEnter: () => goToSection(section, intoAnim),
+                onEnter: () => goToSection(section),
+                onEnterBack: () => goToSection(section)
+            });
         });
-    });
+    }
 
     // VAL타 강사
     $(".teacherTab li.on a").each(function () {
