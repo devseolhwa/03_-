@@ -13,10 +13,11 @@ $(document).ready(function(){
     if(navigator.platform){
         if(0 > filter.indexOf(navigator.platform.toLowerCase())){
             //alert("Mobile");
-            $(body).addClass("mobileFilter");
+           
         }else{
             //alert("PC");
             snapscroll();
+            $(body).addClass("pcFilter");
         }
     }
 
