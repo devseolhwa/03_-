@@ -9,6 +9,7 @@ $(document).ready(function(){
         svgEffect();
     });
 
+    // pc mobile 환경체크
     let filter = "win16|win32|win64|mac";
     if(navigator.platform){
         if(0 > filter.indexOf(navigator.platform.toLowerCase())){
