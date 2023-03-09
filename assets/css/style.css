@@ -246,8 +246,10 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 
 .mobileFilter .slideSection{height: 100%;padding: 80px 0;}
 .mobileFilter .slideBox{height: 100%;}
+.mobileFilter .slideBox .slideItem .slideItemName{font-size: 20px;}
 .mobileFilter .premiumEvent{height: 100%;padding: 80px 0;}
 .mobileFilter .premiumItem{height: 100%;}
+
 
 @-webkit-keyframes bubbleBounce {
     0%, 100%{-webkit-transform: translate(0, -3%);transform: translate(0, -3%);}
