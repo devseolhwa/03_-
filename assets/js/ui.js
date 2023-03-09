@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-    skrollr.init();
     setTimeout(function(){
         svgEffect();
         textEffect();
@@ -15,6 +14,7 @@ $(document).ready(function(){
             //alert("Mobile");
         }else{
             //alert("PC");
+            skrollr.init();
             snapscroll();
         }
     }

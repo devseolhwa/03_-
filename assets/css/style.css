@@ -1,4 +1,4 @@
-body{margin-top: 80px !important;overflow-x: auto !important;height: 100% !important;}
+body{margin-top: 80px !important;overflow: auto !important;height: 100% !important;}
 .wrap{min-width: 1440px;}
 
 .floating{display: none;position: fixed;/* right: 60px; *//* bottom: 60px; */right: 50px;bottom: 45px;width: 320px;height: 141px; background-image: url(../images/bg_floating.png);background-position: center;background-repeat: no-repeat;z-index: 99;}
