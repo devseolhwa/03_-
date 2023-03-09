@@ -25,10 +25,13 @@
         </a>
     </div>
 
-    <div class="wrap">
+    <!-- [전달사항] 로그인후에는 .wrap에 .loginChk 추가가 되어야 합니다. -->
+    <div class="wrap loginChk">
         <div class="visual">
             <div class="visualBg"><img src="assets/images/bg_visual.jpg" alt=""></div>
-            <div class="visualText"><img src="assets/images/img_visual_text.png" alt="사이VAL대학교 당신만을 위한 발로란트 공식 에이스 양성 대학교"></div>
+            <div class="visualText ">
+                <img src="assets/images/img_visual_text.png" alt="사이VAL대학교 당신만을 위한 발로란트 공식 에이스 양성 대학교">
+            </div>
         </div><!-- visual end -->
         <div class="menuGroup">
             <div class="menuGroupInner">
@@ -50,7 +53,7 @@
                 <div class="effectLayer effectLayer03 back" data-bottom-top="transform: translate3d(0, 150px, 0)" data-top-bottom="transform: translate3d(0, -150px, 0)"><img src="assets/images/bg_dayCheck03.png" alt=""/></div>
                 <strong class="titleMd colorDark">매일 꾸준한 발로란트 실전 경험을 쌓아보세요!</strong>
                 <strong class="titleXl colorDark">
-                    1일 1<span class="colorRed">VAL</span> 
+                    1일 1<span class="colorRed ">VAL</span> 
                     <span class="svgEffectRelative">
                         출석체크
                         <em class="svgEffect svgEffect01 back">
@@ -71,69 +74,122 @@
                 </p>
                 <p class="textSm colorDark">2023. 03. 27(월)  - 04. 23(일)</p>
                 <div class="btnCenter mt35">
-                    <div class="btnLine">
-                        <button type="button" class="btn lg bgRed">
-                            <span class="bgRedHover"></span>
-                            <span>1VAL 했다면 출석체크 하기</span>
-                        </button>
-                    </div>
+                    <button type="button" class="btn lg bgDark" id="btnTable">
+                        <span>내가 획득한 상품 전체 보기</span>
+                        <i class="arr"></i>
+                    </button>
                 </div>
+                <div class="tableData mb50">
+                    <table>
+                        <caption>내가 획득한 상품 전체표</caption>
+                        <colgroup>
+                            <col style="width: 260px;">
+                            <col style="width: auto;">
+                            <col style="width: 430px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="col">2023. 04. 02 19:00</th>
+                                <td class="tableName">길잡이 플레이어 카드</td>
+                                <td>획득 완료</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">2023. 04. 02 19:00</th>
+                                <td class="tableName">MSI Geforce RTX3070TI 게이밍 X 트리오 D6X 8GB 트라이프로져2</td>
+                                <td><button type="button" class="btn sm bgRed">배송지 입력</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">2023. 04. 02 19:00</th>
+                                <td class="tableName">PC방 마일리지 쿠폰(게토)<span>쿠폰 번호 : 3MDUHA4SKG3B</span></td>
+                                <td><button type="button" class="btn sm bgRed">쿠폰 확인</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">2023. 04. 02 19:00</th>
+                                <td class="tableName">이삭토스트 5천원권</td>
+                                <td><button type="button" class="btn sm bgRed">배송지 입력</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">2023. 04. 02 19:00</th>
+                                <td class="tableName">레디어나이트 포인트 5개</td>
+                                <td>획득 완료</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">2023. 04. 02 19:00</th>
+                                <td class="tableName">PC방 마일리지 쿠폰(피카)<span>쿠폰 번호 : 3MDUHA4SKG3B</span></td>
+                                <td><button type="button" class="btn sm bgRed">쿠폰 확인</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">2023. 04. 02 19:00</th>
+                                <td class="tableName">PC방 마일리지 쿠폰(게토)<span>쿠폰 번호 : 3MDUHA4SKG3B</span></td>
+                                <td><button type="button" class="btn sm bgRed">쿠폰 확인</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">2023. 04. 02 19:00</th>
+                                <td class="tableName">프리미엄 경품 응모하기</td>
+                                <td><button type="button" class="btn sm bgRed">응모하기</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- tableData end -->
 
                 <div class="dayCheckTable">
                     <div class="allCheck">
                         <p class="CheckTitle"><span>ALL</span></p>
                         <div class="itemGroup">
+                            <!-- [전달사항] Default .item 에 추가 클래스 없음 / 출석체크 후 .on 추가 / 획득후 .end 추가 -->
                             <div class="item">
                                 <p class="days"><span>DAY 1</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_allitem_day1.png" alt=""></div>
                                     <p class="itemName"><span>그건 가르쳐줄 수 없어 스프레이</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 2</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_allitem_day2.png" alt=""></div>
                                     <p class="itemName"><span>프라임타임 총기장식</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 3</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
                                     <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
+                                <!-- [전달사항] 쿠폰 확인 또는 배송지 입력 케이스일때 .btnSpecialGet 추가 -->
+                                <button type="button" class="btnSpecialGet">쿠폰 확인</button>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 4</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
                                     <p class="itemName"><span>레디어나이트 포인트 5개</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 5</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_allitem_day5.png" alt=""></div>
                                     <p class="itemName"><span>길잡이 플레이어 카드</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item on">
                                 <p class="days"><span>DAY 6</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
                                     <p class="itemName"><span>레디어나이트 포인트 10개</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item on">
                                 <!-- [전달사항] 상품 획득전 추가 클래스 x / 상품 획득후 추가 클래스 .on / 응모 클릭후 추가 클래스 .end -->
-                                <a href="#" class="premiumBanner">
+                                <a href="#" class="premiumBanner on">
                                     <div class="premiumBannerInner">
                                         <p class="text">프리미엄 경품 응모 찬스!</p>
                                         <p class="btn">응모하기</p>
@@ -143,15 +199,18 @@
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
                                     <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item on">
                                 <p class="days"><span>DAY 8+</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
-                                    <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <p class="itemName">
+                                        <span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span>
+                                        <span class="total"><em>23</em>개</span>
+                                    </p>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
                         </div><!-- itemGroup end -->
@@ -159,57 +218,63 @@
                     <div class="pcCheck">
                         <p class="CheckTitle"><span>PC방</span></p>
                         <div class="itemGroup">
-                            <div class="item">
+                            <!-- 
+                                [전달사항] Default .item 에 추가 클래스 없음 / 출석체크 후 .on 추가 / 획득후 .end 추가
+                                .item의 마지막 DAY 8+는 무결점 출석상자가 늘어나기 때문에 한번 획득 후에도 .on 상태여야 합니다.
+                            -->
+                            <div class="item end">
                                 <p class="days"><span>DAY 1</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_pcitem_day1.png" alt=""></div>
                                     <p class="itemName"><span>PC방 마일리지 쿠폰</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 2</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
                                     <p class="itemName"><span>레디어나이트 포인트 5개</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 3</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
                                     <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
+                                <!-- [전달사항] 쿠폰 확인 또는 배송지 입력 케이스일때 .btnSpecialGet 추가 -->
+                                <button type="button" class="btnSpecialGet">쿠폰 확인</button>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 4</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
                                     <p class="itemName"><span>레디어나이트 포인트 5개</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 5</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_pcitem_day5.png" alt=""></div>
                                     <p class="itemName"><span>물어 스프레이</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <p class="days"><span>DAY 6</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
                                     <p class="itemName"><span>레디어나이트 포인트 10개</span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item end">
                                 <!-- [전달사항] 상품 획득전 추가 클래스 x / 상품 획득후 추가 클래스 .on / 응모 클릭후 추가 클래스 .end -->
-                                <a href="#" class="premiumBanner">
+                                <a href="#" class="premiumBanner end">
                                     <div class="premiumBannerInner">
                                         <p class="text">프리미엄 경품 응모 찬스!</p>
                                         <p class="btn">응모하기</p>
@@ -219,15 +284,20 @@
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
                                     <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
+                                <!-- [전달사항] 쿠폰 확인 또는 배송지 입력 케이스일때 .btnSpecialGet 추가 -->
+                                <button type="button" class="btnSpecialGet">배송지 입력</button>
                             </div>
-                            <div class="item">
+                            <div class="item on">
                                 <p class="days"><span>DAY 8+</span></p>
                                 <div class="itemBox">
                                     <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
-                                    <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
-                                    <button type="button" class="btnGet">보상받기</button>
+                                    <p class="itemName">
+                                        <span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span>
+                                        <span class="total"><em>21</em>개</span>
+                                    </p>
+                                    <button type="button" class="btnGet"><span>보상받기</span></button>
                                 </div>
                             </div>
                         </div><!-- itemGroup end -->
@@ -235,9 +305,10 @@
                 </div><!-- dayCheckTable end -->
             </div><!-- inner end -->
         </div><!-- dayCheck end -->
+    
         <div class="slideSection section" id="slideSection">
             <div class="slideSectionInner">
-                <strong class="titleMd colorWhite">사이VAL대학교 신입생의 하루 일상이 여기에 전부 담겨있습니다.</strong>
+                <strong class="titleSm colorWhite">사이VAL대학교 신입생의 하루 일상이 여기에 전부 담겨있습니다.</strong>
                 <strong class="titleLg colorWhite">
                     <span class="svgEffectRelative">
                         무결점 출석상자
@@ -345,6 +416,7 @@
                 </div>
             </div>
         </div><!-- slideSection end -->
+    
         <div class="premiumEvent section">
             <div class="premiumEventInner">
                 <strong class="titleSm colorDark">
@@ -376,6 +448,7 @@
                 </div>
             </div>
         </div><!-- premiumEvent end -->
+    
         <div class="eventInfo">
             <div class="eventInfoInner">
                 <strong>이벤트 유의사항</strong>
