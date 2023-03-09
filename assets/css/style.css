@@ -244,6 +244,11 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .teacherWords p.teacherName {font-size: 18px;font-weight: 500;}
 .teacherDetail {display: none;box-sizing: border-box;}
 
+.mobileFilter .slideSection{height: 100%;padding: 80px 0;}
+.mobileFilter .slideBox{height: 100%;}
+.mobileFilter .premiumEvent{height: 100%;padding: 80px 0;}
+.mobileFilter.premiumItem{height: 100%;}
+
 @-webkit-keyframes bubbleBounce {
     0%, 100%{-webkit-transform: translate(0, -3%);transform: translate(0, -3%);}
     50%{-webkit-transform: translate(0, 3%);transform: translate(0, 3%);}
