@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/popup.css">
 </head>
@@ -19,12 +17,9 @@
     <header id="riotbar-header"></header>
     <header id="top-menu"></header>
 
-
-
     <div class="wrap">
-
         <div class="popupSample">
-            <!-- [전달사항] 팝업영역 하단에 section으로 추가되어 있음 / 상단에 popup.css 연결 / modarOpen('') #값명과 하단의 section #값이 동일해야 합니다. -->
+            <!-- [전달사항] 팝업영역은 하단에 section으로 추가되어 있음 / 상단에 popup.css 연결 하단에 popup.js 연결 / modarOpen('') #값명과 하단의 section #값이 동일해야 합니다. -->
             <button onclick="modarOpen('#modarInitemVer1');">인 아이템 경품 당첨 팝업</button>
             <button onclick="modarOpen('#modarInitemVer2');">인 아이템 경품 당첨 팝업 - 보유중</button>
             <button onclick="modarOpen('#modarRealitem');">실물 경품 당첨 팝업</button>
@@ -32,8 +27,8 @@
             <button onclick="modarOpen('#modarMileageCoupon');">PC방 마일리지 쿠폰 당첨 팝업</button>
             <button onclick="modarOpen('#modarGetoCoupon');">PC방 마일리지 게토</button>
             <button onclick="modarOpen('#modarPicaCoupon');">PC방 마일리지 피카</button>
+            <button onclick="modarOpen('#modarCouponInfo');">쿠폰사용안내</button>
         </div>
-
 
         <!-- 인 아이템 경품 당첨 팝업 start -->
         <section id="modarInitemVer1" class="modarPopup">
@@ -175,15 +170,6 @@
                         <button type="button" onclick="modarOpen('#modarCouponInfo');" id="btnCouponInfo"><span>쿠폰 사용 안내</span></button>
                         <button type="button" class="js_modar_close disabled">확인</button> 
                     </div><!-- modar_body end -->
-                    <!-- [전달사항] 출석상자 오픈시에만 .modar_body 다음에 .firstPopupBox 가 추가됨 -->
-                    <div class="firstPopupBox">
-                        <h5 class="popupTextLg">
-                            무결점 출석상자를<br />
-                            오픈하고 있습니다!
-                        </h5>
-                        <div class="popupBoxImg"><img src="assets/images/img_popupBox.gif" alt=""></div>
-                        <p class="openBoxNumber">오픈 가능한 출석상자 : <span>2</span>개</p>
-                    </div><!-- firstPopupBox end -->
                     <button type="button" class="btn_close_modar">닫기</button>                
                 </div><!-- modar_inner end -->
             </div><!-- modar_container end -->
@@ -330,7 +316,6 @@
     <script src="assets/js/lib/ScrollTrigger.min.js"></script>
     <script src="assets/js/lib/skrollr.min.js"></script>
     <script src="assets/js/lib/swiper.min.js"></script>
-    <!-- <script src="assets/js/slick.js"></script> -->
     <script src="assets/js/ui.js"></script>
     <script src="assets/js/popup.js"></script>
 

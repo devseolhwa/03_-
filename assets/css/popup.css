@@ -1,37 +1,27 @@
-.popupSample {width: 1440px;min-height: 600px;margin: 0 auto;padding: 20px 0 0 0;}
+.popupSample {width: 1440px;min-height: 610px;margin: 0 auto;padding: 20px 0 0 0;}
 .popupSample button {width: auto;height: auto;margin: 0 20px 20px 0;padding: 15px 30px;display: inline-block;color: #fff;font-size: 16px;text-align: center;background: #333;cursor: pointer;}
 
-
-.modar_opened {overflow: hidden;}
-.modarPopup {display: none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.7);-webkit-overflow-scrolling: touch;z-index: 99999;opacity: 0;visibility: hidden;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-transition-property: opacity, visibility;transition-property: opacity, visibility;-webkit-transition-delay: 100ms;transition-delay: 100ms;}
-.modarPopup .modar_container {width: 100%;height: 100%;display: -webkit-box;display: flex;-moz-justify-content: center;-ms-justify-content: center;-webkit-box-pack: center;justify-content: center;-ms-flex-pack: center;-moz-align-items: center;-ms-align-items: center;-webkit-box-align: center;align-items: center;overflow-y: auto;padding: 40px 0;box-sizing: border-box;}
-.modarPopup .modar_inner {position: relative;width: 800px;max-width: 100%;min-height: 460px;padding: 80px 60px 48px;background: #ECE8E1;box-sizing: border-box;overflow: hidden;-webkit-animation: slideOutDown 0.3s;animation: slideOutDown 0.3s;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
-.modar_body {/* position: relative; *//* max-height: 800px; *//* overflow-y: auto; */box-sizing: border-box;scrollbar-color: #7E8082;}
-.modar_body::-webkit-scrollbar {width: 10px;}
-/* 스크롤 바 */
-.modar_body::-webkit-scrollbar-track {background-color: #51575C;}
-/* 스크롤 바 밑의 배경 */
-.modar_body::-webkit-scrollbar-thumb {background: #7E8082;}
-/* 실질적 스크롤 바 */
-.modar_body::-webkit-scrollbar-thumb:hover {background: #cacdcf;}
-/* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
-.modar_body::-webkit-scrollbar-thumb:active {background: #cacdcf;}
-/* 실질적 스크롤 바를 클릭할 때 */
+.modarOpened{overflow: hidden !important;}
+.modarPopup{display: none;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.6);-webkit-overflow-scrolling: touch;z-index: 99999;opacity: 0;visibility: hidden;overflow-y: auto;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;-webkit-transition-property: opacity, visibility;transition-property: opacity, visibility;-webkit-transition-delay: 100ms;transition-delay: 100ms;scrollbar-color: #7E8082;}
+.modarPopup::-webkit-scrollbar {width: 10px;}/* 스크롤 바 */
+.modarPopup::-webkit-scrollbar-track {background-color: #51575C;}/* 스크롤 바 밑의 배경 */
+.modarPopup::-webkit-scrollbar-thumb {background: #7E8082;}/* 실질적 스크롤 바 */
+.modarPopup::-webkit-scrollbar-thumb:hover {background: #cacdcf;}/* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+.modarPopup::-webkit-scrollbar-thumb:active {background: #cacdcf;}/* 실질적 스크롤 바를 클릭할 때 */
+.modarPopup .modar_container{position: absolute;width: 100%;height: auto;min-height: 100%;display: -webkit-box;display: flex;-moz-justify-content: center;-ms-justify-content: center;-webkit-box-pack: center;justify-content: center;-ms-flex-pack: center;-moz-align-items: center;-ms-align-items: center;-webkit-box-align: center;align-items: center;padding: 40px 0;box-sizing: border-box;}
+.modarPopup .modar_inner {position: relative;width: 800px;max-width: 100%;min-height: 460px;padding: 80px 60px 48px;background: #ECE8E1;box-sizing: border-box;-webkit-animation: slideOutDown 0.3s;animation: slideOutDown 0.3s;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
+.modarPopup .modar_body{display: block;}
 .js_modar_close {display: block;width: 100%;padding: 21px 30px;background-color: #FF4655;box-sizing: border-box;font-size: 20px;color: #fff;font-weight: 700;text-align: center;cursor: pointer;}
 .js_modar_close.disabled{background: #D9D5D2;color: #B1B1B1;}
-.btn_close_modar {position: absolute;top: 14px;right: 17px;width: 40px;height: 40px;background-image: url("../images/icon_modar_popup_close.png");background-position: center;background-repeat: no-repeat;text-indent: -9999px;overflow: hidden;cursor: pointer;}
+.btn_close_modar {position: absolute;top: 14px;right: 17px;width: 40px;height: 40px;background-image: url(../images/icon_modar_popup_close.png);background-position: center;background-repeat: no-repeat;text-indent: -9999px;overflow: hidden;cursor: pointer;}
 .modarPopup.show {opacity: 1;visibility: visible;-webkit-transition-delay: 0s;transition-delay: 0s;}
 .modarPopup.show .modar_inner {-webkit-animation: slideInUp 0.3s 50ms;animation: slideInUp 0.3s 50ms;-webkit-animation-fill-mode: backwards;animation-fill-mode: backwards;}
-.tab_btn_group {
-display: flex;align-items: center;flex-direction: row;}
-.tab_btn_group li {flex: 1;height: 65px;background: #F4F2ED;}
-.tab_btn_group li a {width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;box-sizing: border-box;font-size: 16px;color: #222222;font-weight: 700;}
-.tab_btn_group li.on {background: #FF4655;}
-.tab_btn_group li.on a{color: #ECE8E1;}
-.tab_detail {display: none;box-sizing: border-box;}
-.tab_detail_inner{padding: 0 60px 45px;}
-.tab_detail p{font-size: 16px;color: #222222;line-height: 150%;font-weight: 700;}
-.tab_detail p + p{margin-top: 15px;}
+
+.firstPopupBox{opacity: 0;position: absolute;left: 0;top: 0;display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100%;height: 100%;background: #ECE8E1;z-index: -1;transition: .4s;-webkit-transition: .4s;}
+.modarPopup.firstPopupBoxOpen .modar_inner{min-height: 680px;}
+.modarPopup.firstPopupBoxOpen .modar_body{display: none;}
+.modarPopup.firstPopupBoxOpen .firstPopupBox{opacity: 1;z-index: 11;}
+.firstPopupBox .popupBoxImg{max-width: 380px;margin: 0 auto;text-align: center;}
 
 .popupTextLg{margin-bottom: 10px;font-size: 72px;color: #222;line-height: 110%;font-weight: 400;text-align: center;font-family:"Black Han Sans", "Apple SD Gothic Neo";}
 .popupTextMd{margin-bottom: 10px;font-size: 24px;color: #222;line-height: 150%;font-weight: 700;text-align: center;}
@@ -39,18 +29,11 @@ display: flex;align-items: center;flex-direction: row;}
 .popupTextXs{font-size: 16px;color: #4A4A4A;line-height: 170%;font-weight: 500;text-align: left;}
 .openBoxNumber{font-size: 18px;color: #222;line-height: 160%;font-weight: 600;text-align: center;}
 .prizeItemImg{width: 330px;height: auto;margin: 0 auto 40px;text-align: center;}
-.firstPopupBox{opacity: 0;position: absolute;left: 0;top: 0;display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100%;height: 100%;background: #ECE8E1;z-index: -1;transition: .4s;-webkit-transition: .4s;}
-.modar_body{display: block;}
-.modarPopup.firstPopupBoxOpen .firstPopupBox{opacity: 1;z-index: 11;}
-.modarPopup.firstPopupBoxOpen .modar_inner{min-height: 680px;}
-.modarPopup.firstPopupBoxOpen .modar_body{display: none;}
-.popupBoxImg{max-width: 380px;margin: 0 auto;text-align: center;}
 
 .realitemSlide{position: relative;overflow: hidden;margin-bottom: 40px;}
 .realitemSlide .slideItem{text-align: center;}
 .realitemSlide .slideItem img{max-height: 330px;}
-.realitemSlide .navigation span{display: block;position: absolute; width: 20px;height: 36px;background-image: url(../images/arr_slideNavigation.png);background-position: center;background-repeat: no-repeat;    overflow: hidden;text-indent: -9999px;white-space: nowrap;}
-
+.realitemSlide .navigation span{display: block;position: absolute; width: 20px;height: 36px;background-image: url(../images/arr_slideNavigation.png);background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
 .realitemSlide .navigation .swiper-button-prev{left: 20px;}
 .realitemSlide .navigation .swiper-button-next{right: 20px; transform: rotate(180deg);}
 .realitemSlide .swiper-button-prev:after, .realitemSlide .swiper-button-next:after{display: none;}
@@ -59,28 +42,36 @@ display: flex;align-items: center;flex-direction: row;}
 .realitemSlide .pagination .swiper-pagination-bullet-active{background-color: #222;}
 .realitemSlide .pagination .swiper-pagination-bullet + .swiper-pagination-bullet{margin-left: 10px;}
 .loadingDelayText{margin: 87px 0 97px;}
+
+.tab_btn_group {display: flex;align-items: center;flex-direction: row;}
+.tab_btn_group li {flex: 1;height: 65px;background: #F4F2ED;}
+.tab_btn_group li a {width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;box-sizing: border-box;font-size: 16px;color: #222222;font-weight: 700;}
+.tab_btn_group li.on {background: #FF4655;}
+.tab_btn_group li.on a{color: #ECE8E1;}
+.tab_detail {display: none;box-sizing: border-box;}
+.tab_detail_inner{padding: 0 60px 45px;}
+.tab_detail p{font-size: 16px;color: #222222;line-height: 150%;font-weight: 700;}
+.tab_detail p + p{margin-top: 15px;}
 .MileageCouponBtn{display: flex;align-items: center;justify-content: space-between;margin: 30px 0 38px;}
 .MileageCouponBtn li{flex: 1;}
 .MileageCouponBtn li + li{margin-left: 18px;}
 .MileageCouponBtn li button{width: 100%;height: 100px;border: 1px solid #C4C1BC;box-sizing: border-box;font-size: 20px;color: #222222;font-weight: 700;text-align: center;cursor: pointer;transition: .3s;-webkit-transition: .3s;}
 .MileageCouponBtn li button:hover, .MileageCouponBtn li.on button{background-color: #FF4655;border-color: #FF4655;color: #ECE8E1;}
-.MileageCouponBtn li.disabled button{background: #D9D5D2;border-color: #D9D5D2; color: #B1B1B1;cursor: inherit;}
+.MileageCouponBtn li.disabled button{background: #D9D5D2;border-color: #D9D5D2;color: #B1B1B1;cursor: inherit;}
 #btnCouponInfo{display: block;margin: 0 auto 58px;padding-left: 18px;background-image: url(../images/icon_couponInfo.png);background-position: left center;background-repeat: no-repeat;cursor: pointer;}
-#btnCouponInfo span{font-size: 14px;font-weight: 600;line-height: 140%;text-align: center;color: #222222;border-bottom: 1px solid #222;}
+#btnCouponInfo span{font-size: 14px;font-weight: 600;line-height: 140%;text-align: center;color: #222;border-bottom: 1px solid #222;}
 .pcCouponImg{position: relative;text-align: center;}
-.pcCouponNumber{position: absolute;top: 105px;left: 117px;font-size: 56px;color: #000000;font-weight: 400;font-family: "Tungsten-Bold", "Apple SD Gothic Neo";}
+.pcCouponNumber{position: absolute;top: 105px;left: 117px;font-size: 56px;color: #000;font-weight: 400;font-family: "Tungsten-Bold", "Apple SD Gothic Neo";}
 .pcCouponDate{position: absolute;top: 190px;left: 140px;font-size: 21px;font-weight: 700;color: #8B978F;}
 .numList {counter-reset:list-number;}
-.numList > li{position: relative;padding-left: 19px;font-size: 16px;color: #5C5852;font-weight: 500;line-height: 170%;word-break: break-all;counter-increment: list-number;}
-.numList > li:before{content:counter(list-number)'.';position: absolute;left: 0;top: 0;display: block;}
-.dotList > li {position: relative;padding-left: 14px;font-size: 16px;color: #5C5852;font-weight: 500;line-height: 170%;word-break: break-all;}
-
+.numList > li{position: relative;padding-left: 19px;font-size: 16px;color: #5C5852;font-weight: 500;line-height: 170%;word-break: keep-all;counter-increment: list-number;}
+.numList > li:before{content: counter(list-number)'.';position: absolute;left: 0;top: 0;display: block;}
+.dotList > li {position: relative;padding-left: 14px;font-size: 16px;color: #5C5852;font-weight: 500;line-height: 170%;word-break: keep-all;}
 .dotList > li:before {content: "";position: absolute;left: 0;top: 11px;display: block;width: 4px;height: 4px;background: #5C5852;border-radius: 50%;}
 #modarCouponInfo .modar_inner{padding: 0;}
 #modarCouponInfo .modar_body{padding-top: 80px;}
 #modarCouponInfo .tab_btn_group{padding: 0 60px 38px;}
 #modarCouponInfo .couponInfoList{background: #CFC9C1;padding: 40px 60px;box-sizing: border-box;}
-
 
 /* popup */
 @-webkit-keyframes slideInUp {

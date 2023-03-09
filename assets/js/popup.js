@@ -13,10 +13,8 @@ $(document).on("click", ".js_modar_close , .btn_close_modar", function(e) {
 
 function modarOpen(_target) {
     let modar_body = $(_target).children().children().children(".modar_body");
-    let firstPopupBox = $(_target).children().children().children().children(".firstPopupBox");
     let firstPopupBoxIs = $(modar_body).next().is(".firstPopupBox");
-    console.log(firstPopupBox);
-    console.log(firstPopupBoxIs);
+    //console.log(firstPopupBoxIs);
 
     if (firstPopupBoxIs) {
         $(_target).addClass("firstPopupBoxOpen");
@@ -43,7 +41,8 @@ function modarClose(_target, _opener) {
         tg = $(_target);
         modarOpener = $(_opener);
     } else {
-        tg = $(".modarPopup.show");
+        //tg = $(".modarPopup.show");
+        tg = $(_target);
         modarOpener = null;
     }
 
@@ -57,13 +56,13 @@ function modarClose(_target, _opener) {
 function bodyScroll(_status, _orgWidth) {
     var $fixedObj = $("body");
     if (_status) {
-        $("body").addClass("modar_opened");
+        $("body").addClass("modarOpened");
         if ($("html").get(0).scrollWidth > $("html").width() === false) {
             $fixedObj.css("margin-right", $("body").width() - _orgWidth);
         }
     } else {
         $fixedObj.css("margin-right", "");
-        $("body").removeClass("modar_opened");
+        $("body").removeClass("modarOpened");
     }
 }
 
