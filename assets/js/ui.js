@@ -67,6 +67,22 @@ $(document).ready(function(){
         });
     }
 
+    /* gsap.registerPlugin(ScrambleTextPlugin);
+
+    var $textElement01 = $("#textElement01");
+    var $textElement02 = $("#textElement02");
+    var $textElement03 = $("#textElement03");
+    var $textElement04 = $("#textElement04");
+
+    let textTimeL = gsap.timeline({ 
+        defaults: {duration: 2, ease: "power1.inOut", yoyo: false,}
+    })
+
+    textTimeL.to($textElement01, {scrambleText:{text:"들어간다, 적을 본다, 쏜다, 끝! 참 쉽죠?", chars:"들어간다, 적을 본다, 쏜다, 끝! 참 쉽죠?"}});
+    textTimeL.to($textElement02, {scrambleText:{text:"된모만 믿고 따라오면 당신도 충분히 가능합니다.", chars:"된모만 믿고 따라오면 당신도 충분히 가능합니다."}});
+    textTimeL.to($textElement03, {scrambleText:{text:"침착하게, 하나씩, 차근차근 따라오면 끝!", chars:"침착하게, 하나씩, 차근차근 따라오면 끝!"}});
+    textTimeL.to($textElement04, {scrambleText:{text:"헤매고만 있던 나의 VAL생, 이제 버니와 다시 일어설 시간입니다.", chars:"헤매고만 있던 나의 VAL생, 이제 버니와 다시 일어설 시간입니다."}}); */
+
     // floating 스크롤후 나타나기
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -98,20 +114,22 @@ $(document).ready(function(){
     });
 
     // 무결점 출석상자 slide
-    var slideBox = new Swiper(".slideBox",{
-        slidesPerView: "auto",
-        spaceBetween: 0,
-        centeredSlides: true,
-        loop: true,
+    $(".slideBox").slick({
+        slidesToShow : 3,
+        slidesToScroll: "auto",
+        autoplay: true,
+        autoplaySpeed: 3000,
         speed: 800,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".pagination",
-            clickable: true,
-        }
+        centerMode: true,
+        centerPadding : "200px", 
+        variableWidth: false,
+        infinite: true,
+        swipeToSlide: true ,
+        draggable: true,
+        arrows: false,
+        dots: true,
+        pauseOnHover: false,
+        appendDots: $(".pagination")
     });
 
     // 스냅스크롤
@@ -144,7 +162,6 @@ $(document).ready(function(){
                     onComplete: scrolling.enable,
                     duration: 1
                 });
-
                 anim && anim.restart();
             }
         }
@@ -165,6 +182,10 @@ $(document).ready(function(){
         let attrH = $(this).attr("href");
         if (attrH !== "#" && attrH !== "#;" && attrH.charAt(0) === "#") {
             $(attrH + ".teacherDetail").css("display", "block");
+            $("#teacherDetail01").addClass("show");
+            setTimeout(function() { 
+                $(attrH).addClass("active");     
+            }, 2000);  
         }
     });
 
@@ -184,9 +205,21 @@ $(document).ready(function(){
             e.preventDefault();
         } else if (attrH.charAt(0) === "#") {
             if ($(attrH).hasClass("teacherDetail")) {
-                $(attrH).show().siblings(".teacherDetail").hide();
+
+                $(attrH).show().addClass("show").siblings(".teacherDetail").hide().removeClass("show");
+                setTimeout(function() { 
+                    $(attrH).addClass("active").siblings(".teacherDetail").removeClass("active");     
+                }, 1500);  
                 e.preventDefault();
             }
+        }
+    });
+
+    // 아이템 라스트 정렬
+    $(".itemName").each(function () {
+        let totalIs = $(this).children().is(".total");
+        if (totalIs) {
+            $(this).addClass("ta_l");
         }
     });
 
