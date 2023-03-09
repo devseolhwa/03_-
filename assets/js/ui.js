@@ -162,14 +162,14 @@ $(document).ready(function(){
 
     // VAL타 강사
     $(".teacherTab li.on a").each(function () {
-        var opt = $(this).attr("href");
-        if (opt !== "#" && opt !== "#;" && opt.charAt(0) === "#") {
-            $(opt + ".teacherDetail").css("display", "block");
+        let attrH = $(this).attr("href");
+        if (attrH !== "#" && attrH !== "#;" && attrH.charAt(0) === "#") {
+            $(attrH + ".teacherDetail").css("display", "block");
         }
     });
 
     $(".teacherTab li a").on("click", function (e) {
-        var opt = $(this).attr("href");
+        let attrH = $(this).attr("href");
         $(this).parent("li").addClass("on").siblings("li").removeClass("on");
 
         if ($(this).parent("li").hasClass("doenmonav")) {
@@ -180,11 +180,11 @@ $(document).ready(function(){
             $(".valtaTeacher").removeClass("doenmoTeacher");
         }
 
-        if (opt === "#" || opt === "" || opt === "#;") {
+        if (attrH === "#" || attrH === "" || attrH === "#;") {
             e.preventDefault();
-        } else if (opt.charAt(0) === "#") {
-            if ($(opt).hasClass("teacherDetail")) {
-                $(opt).show().siblings(".teacherDetail").hide();
+        } else if (attrH.charAt(0) === "#") {
+            if ($(attrH).hasClass("teacherDetail")) {
+                $(attrH).show().siblings(".teacherDetail").hide();
                 e.preventDefault();
             }
         }

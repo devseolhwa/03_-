@@ -8,18 +8,18 @@
 .modarPopup::-webkit-scrollbar-thumb {background: #7E8082;}/* 실질적 스크롤 바 */
 .modarPopup::-webkit-scrollbar-thumb:hover {background: #cacdcf;}/* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
 .modarPopup::-webkit-scrollbar-thumb:active {background: #cacdcf;}/* 실질적 스크롤 바를 클릭할 때 */
-.modarPopup .modar_container{position: absolute;width: 100%;height: auto;min-height: 100%;display: -webkit-box;display: flex;-moz-justify-content: center;-ms-justify-content: center;-webkit-box-pack: center;justify-content: center;-ms-flex-pack: center;-moz-align-items: center;-ms-align-items: center;-webkit-box-align: center;align-items: center;padding: 40px 0;box-sizing: border-box;}
-.modarPopup .modar_inner {position: relative;width: 800px;max-width: 100%;min-height: 460px;padding: 80px 60px 48px;background: #ECE8E1;box-sizing: border-box;-webkit-animation: slideOutDown 0.3s;animation: slideOutDown 0.3s;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
-.modarPopup .modar_body{display: block;}
-.js_modar_close {display: block;width: 100%;padding: 21px 30px;background-color: #FF4655;box-sizing: border-box;font-size: 20px;color: #fff;font-weight: 700;text-align: center;cursor: pointer;}
-.js_modar_close.disabled{background: #D9D5D2;color: #B1B1B1;}
-.btn_close_modar {position: absolute;top: 14px;right: 17px;width: 40px;height: 40px;background-image: url(../images/icon_modar_popup_close.png);background-position: center;background-repeat: no-repeat;text-indent: -9999px;overflow: hidden;cursor: pointer;}
+.modarPopup .modarContainer{position: absolute;width: 100%;height: auto;min-height: 100%;display: -webkit-box;display: flex;-moz-justify-content: center;-ms-justify-content: center;-webkit-box-pack: center;justify-content: center;-ms-flex-pack: center;-moz-align-items: center;-ms-align-items: center;-webkit-box-align: center;align-items: center;padding: 40px 0;box-sizing: border-box;}
+.modarPopup .modarInner {position: relative;width: 800px;max-width: 100%;min-height: 460px;padding: 80px 60px 48px;background: #ECE8E1;box-sizing: border-box;-webkit-animation: slideOutDown 0.3s;animation: slideOutDown 0.3s;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
+.modarPopup .modarBody{display: block;}
+.jsModarClose {display: block;width: 100%;padding: 21px 30px;background-color: #FF4655;box-sizing: border-box;font-size: 20px;color: #fff;font-weight: 700;text-align: center;cursor: pointer;}
+.jsModarClose.disabled{background: #D9D5D2;color: #B1B1B1;}
+.btnCloseModar {position: absolute;top: 14px;right: 17px;width: 40px;height: 40px;background-image: url(../images/icon_modar_popup_close.png);background-position: center;background-repeat: no-repeat;text-indent: -9999px;overflow: hidden;cursor: pointer;}
 .modarPopup.show {opacity: 1;visibility: visible;-webkit-transition-delay: 0s;transition-delay: 0s;}
-.modarPopup.show .modar_inner {-webkit-animation: slideInUp 0.3s 50ms;animation: slideInUp 0.3s 50ms;-webkit-animation-fill-mode: backwards;animation-fill-mode: backwards;}
+.modarPopup.show .modarInner {-webkit-animation: slideInUp 0.3s 50ms;animation: slideInUp 0.3s 50ms;-webkit-animation-fill-mode: backwards;animation-fill-mode: backwards;}
 
 .firstPopupBox{opacity: 0;position: absolute;left: 0;top: 0;display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100%;height: 100%;background: #ECE8E1;z-index: -1;transition: .4s;-webkit-transition: .4s;}
-.modarPopup.firstPopupBoxOpen .modar_inner{min-height: 680px;}
-.modarPopup.firstPopupBoxOpen .modar_body{display: none;}
+.modarPopup.firstPopupBoxOpen .modarInner{min-height: 680px;}
+.modarPopup.firstPopupBoxOpen .modarBody{display: none;}
 .modarPopup.firstPopupBoxOpen .firstPopupBox{opacity: 1;z-index: 11;}
 .firstPopupBox .popupBoxImg{max-width: 380px;margin: 0 auto;text-align: center;}
 
@@ -43,21 +43,21 @@
 .realitemSlide .pagination .swiper-pagination-bullet + .swiper-pagination-bullet{margin-left: 10px;}
 .loadingDelayText{margin: 87px 0 97px;}
 
-.tab_btn_group {display: flex;align-items: center;flex-direction: row;}
-.tab_btn_group li {flex: 1;height: 65px;background: #F4F2ED;}
-.tab_btn_group li a {width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;box-sizing: border-box;font-size: 16px;color: #222222;font-weight: 700;}
-.tab_btn_group li.on {background: #FF4655;}
-.tab_btn_group li.on a{color: #ECE8E1;}
-.tab_detail {display: none;box-sizing: border-box;}
-.tab_detail_inner{padding: 0 60px 45px;}
-.tab_detail p{font-size: 16px;color: #222222;line-height: 150%;font-weight: 700;}
-.tab_detail p + p{margin-top: 15px;}
-.MileageCouponBtn{display: flex;align-items: center;justify-content: space-between;margin: 30px 0 38px;}
-.MileageCouponBtn li{flex: 1;}
-.MileageCouponBtn li + li{margin-left: 18px;}
-.MileageCouponBtn li button{width: 100%;height: 100px;border: 1px solid #C4C1BC;box-sizing: border-box;font-size: 20px;color: #222222;font-weight: 700;text-align: center;cursor: pointer;transition: .3s;-webkit-transition: .3s;}
-.MileageCouponBtn li button:hover, .MileageCouponBtn li.on button{background-color: #FF4655;border-color: #FF4655;color: #ECE8E1;}
-.MileageCouponBtn li.disabled button{background: #D9D5D2;border-color: #D9D5D2;color: #B1B1B1;cursor: inherit;}
+.tabBtnGroup {display: flex;align-items: center;flex-direction: row;}
+.tabBtnGroup li {flex: 1;height: 65px;background: #F4F2ED;}
+.tabBtnGroup li a {width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;box-sizing: border-box;font-size: 16px;color: #222;font-weight: 700;}
+.tabBtnGroup li.on {background: #FF4655;}
+.tabBtnGroup li.on a{color: #ECE8E1;}
+.tabDetail {display: none;box-sizing: border-box;}
+.tabDetail_inner{padding: 0 60px 45px;}
+.tabDetail p{font-size: 16px;color: #222;line-height: 150%;font-weight: 700;}
+.tabDetail p + p{margin-top: 15px;}
+.mileageCouponBtn{display: flex;align-items: center;justify-content: space-between;margin: 30px 0 38px;}
+.mileageCouponBtn li{flex: 1;}
+.mileageCouponBtn li + li{margin-left: 18px;}
+.mileageCouponBtn li button{width: 100%;height: 100px;border: 1px solid #C4C1BC;box-sizing: border-box;font-size: 20px;color: #222;font-weight: 700;text-align: center;cursor: pointer;transition: .3s;-webkit-transition: .3s;}
+.mileageCouponBtn li button:hover, .mileageCouponBtn li.on button{background-color: #FF4655;border-color: #FF4655;color: #ECE8E1;}
+.mileageCouponBtn li.disabled button{background: #D9D5D2;border-color: #D9D5D2;color: #B1B1B1;cursor: inherit;}
 #btnCouponInfo{display: block;margin: 0 auto 58px;padding-left: 18px;background-image: url(../images/icon_couponInfo.png);background-position: left center;background-repeat: no-repeat;cursor: pointer;}
 #btnCouponInfo span{font-size: 14px;font-weight: 600;line-height: 140%;text-align: center;color: #222;border-bottom: 1px solid #222;}
 .pcCouponImg{position: relative;text-align: center;}
@@ -68,9 +68,9 @@
 .numList > li:before{content: counter(list-number)'.';position: absolute;left: 0;top: 0;display: block;}
 .dotList > li {position: relative;padding-left: 14px;font-size: 16px;color: #5C5852;font-weight: 500;line-height: 170%;word-break: keep-all;}
 .dotList > li:before {content: "";position: absolute;left: 0;top: 11px;display: block;width: 4px;height: 4px;background: #5C5852;border-radius: 50%;}
-#modarCouponInfo .modar_inner{padding: 0;}
-#modarCouponInfo .modar_body{padding-top: 80px;}
-#modarCouponInfo .tab_btn_group{padding: 0 60px 38px;}
+#modarCouponInfo .modarInner{padding: 0;}
+#modarCouponInfo .modarBody{padding-top: 80px;}
+#modarCouponInfo .tabBtnGroup{padding: 0 60px 38px;}
 #modarCouponInfo .couponInfoList{background: #CFC9C1;padding: 40px 60px;box-sizing: border-box;}
 
 /* popup */

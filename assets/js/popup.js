@@ -1,4 +1,4 @@
-// modar_popup
+// modarPopup
 $(function () {
 	$(".modarPopup.show").each(function () {
 		modarOpen($(this));
@@ -6,14 +6,14 @@ $(function () {
 });
 
 var modarOpener = null;
-$(document).on("click", ".js_modar_close , .btn_close_modar", function(e) {
+$(document).on("click", ".jsModarClose , .btnCloseModar", function(e) {
     var target = $(this).closest(".modarPopup").attr("id");
     modarClose("#" + target, modarOpener);
 });
 
 function modarOpen(_target) {
-    let modar_body = $(_target).children().children().children(".modar_body");
-    let firstPopupBoxIs = $(modar_body).next().is(".firstPopupBox");
+    let modarBody = $(_target).children().children().children(".modarBody");
+    let firstPopupBoxIs = $(modarBody).next().is(".firstPopupBox");
     //console.log(firstPopupBoxIs);
 
     if (firstPopupBoxIs) {
@@ -69,32 +69,31 @@ function bodyScroll(_status, _orgWidth) {
 $(function () {
 
     // popup tab
-    $(".tab_btn_group .on a").each(function () {
-        var opt = $(this).attr("href");
+    $(".tabBtnGroup .on a").each(function () {
+        let opt = $(this).attr("href");
         if (opt !== "#" && opt !== "#;" && opt.charAt(0) === "#") {
-            $(opt + ".tab_detail").css("display", "block");
+            $(opt + ".tabDetail").css("display", "block");
         }
     });
-
-    $(".tab_btn_group a").on("click", function (e) {
-        var opt = $(this).attr("href");
+    $(".tabBtnGroup a").on("click", function (e) {
+        let opt = $(this).attr("href");
         $(this).parent("li").addClass("on").siblings("li").removeClass("on");
 
         if (opt === "#" || opt === "" || opt === "#;") {
             e.preventDefault();
         } else if (opt.charAt(0) === "#") {
-            if ($(opt).hasClass("tab_detail")) {
-                $(opt).show().siblings(".tab_detail").hide();
+            if ($(opt).hasClass("tabDetail")) {
+                $(opt).show().siblings(".tabDetail").hide();
                 e.preventDefault();
             }
         }
     });
 
     // 마일리지 쿠폰 선택 on 
-    $(".MileageCouponBtn li").click(function(e){
+    $(".mileageCouponBtn li").click(function(e){
         e.preventDefault();
         $(this).addClass("on").siblings("li").removeClass("on");
-        $(this).parent().next().next(".js_modar_close").removeClass("disabled");
+        $(this).parent().next().next(".jsModarClose").removeClass("disabled");
     });
 });
 

@@ -182,7 +182,6 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .premiumBanner.end:hover .premiumBannerInner:after {opacity: 1;-webkit-transform: translate(0);-ms-transform: translate(0);transform: translate(0);-webkit-transition: opacity 1s, -webkit-transform 0.8s;transition: opacity 1s, transform 0.8s, -webkit-transform 0.8s;}
 .premiumBanner.end:hover .premiumBannerInner .btn {opacity: 1;background: #ECE8E1;color: #FF4655;-webkit-transform: translateY(0px);-ms-transform: translateY(0px);transform: translateY(0px);-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;transition: opacity 0.8s, transform 0.8s, -webkit-transform 0.8s;}
 
-
 .slideSection{display: flex;justify-content: center;align-items: center;height: 100vh;padding: 80px 0 0;background-color: #252525;box-sizing: border-box;}
 .slideSection .slideSectionInner{width: 100%;min-width: 1440px;}
 .slideBoxWrap{overflow: hidden;padding-bottom: 5vh;box-sizing: border-box;}
@@ -238,11 +237,20 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .teacherTab li.bunnynav .teacherWords{order: 1;}
 .teacherTab li a {position: relative;display: flex;padding: 5px;background: #ECE8E1;opacity: 0.4;align-items: center;box-sizing: border-box;}
 .teacherTab li.on a {opacity: 1;}
-.teacherImage {}
-.teacherWords {margin-left: 35px;}
-.teacherWords p {font-size: 28px;line-height: 130%;color: #222222;font-weight: 900;}
-.teacherWords p.teacherName {font-size: 18px;font-weight: 500;}
+
+.teacherTab .teacherWords {margin-left: 35px;}
+.teacherTab .teacherWords p {font-size: 28px;line-height: 130%;color: #222222;font-weight: 900;}
+.teacherTab .teacherWords p.teacherName {font-size: 18px;font-weight: 500;}
 .teacherDetail {display: none;box-sizing: border-box;}
+.teacherDetail .teacherName{}
+.teacherDetail .teacherText{}
+
+
+
+
+
+
+
 
 .mobileFilter .slideSection{height: 100%;padding: 80px 0;}
 .mobileFilter .slideBox{height: 100%;}

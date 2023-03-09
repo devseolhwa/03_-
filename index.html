@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/popup.css">
 </head>
 <body>
 
@@ -17,293 +16,377 @@
     <header id="riotbar-header"></header>
     <header id="top-menu"></header>
 
+    <div class="floating">
+        <a href="https://discord.gg/pq8rpMqr9s" target="_blank" title="새창열림">
+            <p>
+                <span>사이VAL대학교</span><br />
+                공식 디스코드 채널 바로가기
+            </p>
+        </a>
+    </div>
+
     <div class="wrap">
-        <div class="popupSample">
-            <!-- [전달사항] 팝업영역은 하단에 section으로 추가되어 있음 / 상단에 popup.css 연결 하단에 popup.js 연결 / modarOpen('') #값명과 하단의 section #값이 동일해야 합니다. -->
-            <button onclick="modarOpen('#modarInitemVer1');">인 아이템 경품 당첨 팝업</button>
-            <button onclick="modarOpen('#modarInitemVer2');">인 아이템 경품 당첨 팝업 - 보유중</button>
-            <button onclick="modarOpen('#modarRealitem');">실물 경품 당첨 팝업</button>
-            <button onclick="modarOpen('#modarLoadingDelay');">로딩지연</button>
-            <button onclick="modarOpen('#modarMileageCoupon');">PC방 마일리지 쿠폰 당첨 팝업</button>
-            <button onclick="modarOpen('#modarGetoCoupon');">PC방 마일리지 게토</button>
-            <button onclick="modarOpen('#modarPicaCoupon');">PC방 마일리지 피카</button>
-            <button onclick="modarOpen('#modarCouponInfo');">쿠폰사용안내</button>
-        </div>
+        <div class="visual">
+            <div class="visualBg"><img src="assets/images/bg_visual.jpg" alt=""></div>
+            <div class="visualText"><img src="assets/images/img_visual_text.png" alt="사이VAL대학교 당신만을 위한 발로란트 공식 에이스 양성 대학교"></div>
+        </div><!-- visual end -->
+        <div class="menuGroup">
+            <div class="menuGroupInner">
+                <a href="#" class="on">1일 1VAL 출석체크</a>
+                <a href="#">VAL타강사</a>
+                <a href="https://events.kr.riotgames.com/valflex/main" target="_blank" title="새창열림">VAL조각 이벤트<i></i></a>
+                <div class="eventBubble">
+                    <a href="https://events.kr.riotgames.com/valflex/main" target="_blank" title="새창열림">
+                        사이VAL대학교 출첵 완료했다면!<br /> 
+                        VAL조각 이벤트 혜택 100% 제공
+                    </a>
+                </div>
+            </div>
+        </div><!-- menuGroup end -->
+        <div class="dayCheck">
+            <div class="effectLayer effectLayer01 back" data-bottom-top="transform: translate3d(0, 300px, 0)" data-top-bottom="transform: translate3d(0, -300px, 0)"><img src="assets/images/bg_dayCheck_left.png" alt=""/></div>
+            <div class="effectLayer effectLayer02 back" data-bottom-top="transform: translate3d(0, 200px, 0)" data-top-bottom="transform: translate3d(0, -200px, 0)"><img src="assets/images/bg_dayCheck_right.png" alt=""/></div>
+            <div class="inner">
+                <div class="effectLayer effectLayer03 back" data-bottom-top="transform: translate3d(0, 150px, 0)" data-top-bottom="transform: translate3d(0, -150px, 0)"><img src="assets/images/bg_dayCheck03.png" alt=""/></div>
+                <strong class="titleMd colorDark">매일 꾸준한 발로란트 실전 경험을 쌓아보세요!</strong>
+                <strong class="titleXl colorDark">
+                    1일 1<span class="colorRed">VAL</span> 
+                    <span class="svgEffectRelative">
+                        출석체크
+                        <em class="svgEffect svgEffect01 back">
+                            <svg width="484" height="20" viewBox="0 0 484 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector 92" d="M7 12.5C60.5 12.5 96.7186 12.5 137.5 12.5C186.5 12.5 257.032 12.5 306 12.5C376.818 12.5 423 7 476.5 7" stroke="#FF4655" stroke-width="14" stroke-linecap="round"/>
+                            </svg>
+                        </em>
+                        <em class="svgEffect svgEffect02 back">
+                            <svg width="92" height="84" viewBox="0 0 92 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector 93" d="M7 25.2995C7.52613 40.5573 8.30665 55.7614 8.30665 71.0323C8.30665 80.2478 10.8684 76.6158 15.3501 70C28.8766 52.7099 44.8239 36.7429 62.8501 22.5C67.2319 19.0378 78.5144 10.9179 84.3501 8" stroke="#FF4655" stroke-width="14" stroke-linecap="round"/>
+                            </svg>
+                        </em>
+                    </span>
+                </strong>
+                <p class="textMd colorDark">
+                    매일 발로란트 한 판만 플레이하면 오늘의 보상 획득 완료! <br />
+                    '무결점 출석상자'에서 터지는 역대급 경품도 함께 노려보세요.
+                </p>
+                <p class="textSm colorDark">2023. 03. 27(월)  - 04. 23(일)</p>
+                <div class="btnCenter mt35">
+                    <div class="btnLine">
+                        <button type="button" class="btn lg bgRed">
+                            <span class="bgRedHover"></span>
+                            <span>1VAL 했다면 출석체크 하기</span>
+                        </button>
+                    </div>
+                </div>
 
-        <!-- 인 아이템 경품 당첨 팝업 start -->
-        <section id="modarInitemVer1" class="modarPopup">
-            <div class="modar_container">
-                <div class="modar_inner">
-                    <div class="modar_body">
-                        <!-- 팝업내용영역 start -->
-                        <h5 class="popupTextLg">축하드립니다!</h5>
-                        <p class="popupTextMd">넌 가르쳐줄 수 없어 스프레이</p>
-                        <div class="prizeItemImg">
-                            <img src="assets/images/ex_prizeItemImg01.png" alt="">
-                        </div>
-                        <p class="popupTextXs mb40">※ 본 상품은 교환 즉시 게임 클라이언트의 수집품 항목에서 확인 및 장착 가능합니다.</p>
-                        <button type="button" class="js_modar_close">확인</button> 
-                    </div><!-- modar_body end -->
-                    <!-- [전달사항] 출석상자 오픈시에만 .modar_body 다음에 .firstPopupBox 가 추가됨 -->
-                    <div class="firstPopupBox">
-                        <h5 class="popupTextLg">
-                            무결점 출석상자를<br />
-                            오픈하고 있습니다!
-                        </h5>
-                        <div class="popupBoxImg"><img src="assets/images/img_popupBox.gif" alt=""></div>
-                        <p class="openBoxNumber">오픈 가능한 출석상자 : <span>2</span>개</p>
-                    </div><!-- firstPopupBox end -->
-                    <button type="button" class="btn_close_modar">닫기</button>                
-                </div><!-- modar_inner end -->
-            </div><!-- modar_container end -->
-        </section>
-        <!-- 인 아이템 경품 당첨 팝업 end -->
-
-        <!-- 인 아이템 경품 당첨 팝업 - 보유중 start -->
-        <section id="modarInitemVer2" class="modarPopup">
-            <div class="modar_container">
-                <div class="modar_inner">
-                    <div class="modar_body">
-                        <!-- 팝업내용영역 start -->
-                        <h5 class="popupTextLg">축하드립니다!</h5>
-                        <p class="popupTextMd">넌 가르쳐줄 수 없어 스프레이</p>
-                        <div class="prizeItemImg">
-                            <img src="assets/images/ex_prizeItemImg01.png" alt="">
-                        </div>
-                        <p class="popupTextXs mb40">※ 본 상품은 교환 즉시 게임 클라이언트의 수집품 항목에서 확인 및 장착 가능합니다.</p>
-                        <p class="popupTextMd colorRed mb20">이미 보유 중인 상품입니다.</p>
-                        <button type="button" class="js_modar_close">확인</button> 
-                    </div><!-- modar_body end -->
-                    <!-- [전달사항] 출석상자 오픈시에만 .modar_body 다음에 .firstPopupBox 가 추가됨 -->
-                    <div class="firstPopupBox">
-                        <h5 class="popupTextLg">
-                            무결점 출석상자를<br />
-                            오픈하고 있습니다!
-                        </h5>
-                        <div class="popupBoxImg"><img src="assets/images/img_popupBox.gif" alt=""></div>
-                        <p class="openBoxNumber">오픈 가능한 출석상자 : <span>2</span>개</p>
-                    </div><!-- firstPopupBox end -->
-                    <button type="button" class="btn_close_modar">닫기</button>                
-                </div><!-- modar_inner end -->
-            </div><!-- modar_container end -->
-        </section>
-        <!-- 인 아이템 경품 당첨 팝업 - 보유중 end -->
-
-        <!-- 실물 경품 당첨 팝업 start -->
-        <section id="modarRealitem" class="modarPopup">
-            <div class="modar_container">
-                <div class="modar_inner">
-                    <div class="modar_body">
-                        <!-- 팝업내용영역 start -->
-                        <h5 class="popupTextLg">축하드립니다!</h5>
-                        <p class="popupTextSm">당첨된 경품을 받으실 배송지 정보를 입력해주세요.</p>
-                        <p class="popupTextMd">발로란트 슬리퍼+양말 굿즈</p>
-                        <div class="realitemSlide">
-                            <div class="swiper-wrapper">
-                                <div class="slideItem swiper-slide">
-                                    <img src="assets/images/ex_prizeItemImg02.png" alt="">
-                                </div>
-                                <div class="slideItem swiper-slide">
-                                    <img src="assets/images/ex_prizeItemImg02.png" alt="">
+                <div class="dayCheckTable">
+                    <div class="allCheck">
+                        <p class="CheckTitle"><span>ALL</span></p>
+                        <div class="itemGroup">
+                            <div class="item">
+                                <p class="days"><span>DAY 1</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_allitem_day1.png" alt=""></div>
+                                    <p class="itemName"><span>그건 가르쳐줄 수 없어 스프레이</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
                                 </div>
                             </div>
-                            <div class="navigation">
-                                <span class="swiper-button-prev">이전</span>
-                                <span class="swiper-button-next">다음</span>
+                            <div class="item">
+                                <p class="days"><span>DAY 2</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_allitem_day2.png" alt=""></div>
+                                    <p class="itemName"><span>프라임타임 총기장식</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
                             </div>
-                            <div class="pagination"></div>
-                        </div>
-                        <div class="popupTextXs mb35">
-                            ※ 배송지 정보를 입력하지 않은 경품은 지급되지 않습니다.<br />
-                            ※ 0000년 00월 00일부터 순차적으로 배송지급 됩니다. <br />
-                            ※ 발로란트 한정 상품으로, 다양한 패션을 연출 시킬 수 있는 발목 양말은 물론, 실내외 어디서든 편하게 신을 수 있는 발로란트 로고 슬리퍼까지 함께 들어있는 세트 상품입니다.<br />
-                        </div>
-                        <button type="button" class="btn md full bgRed">배송지 입력</button> 
-                    </div><!-- modar_body end -->
-                    <!-- [전달사항] 출석상자 오픈시에만 .modar_body 다음에 .firstPopupBox 가 추가됨 -->
-                    <div class="firstPopupBox">
-                        <h5 class="popupTextLg">
-                            무결점 출석상자를<br />
-                            오픈하고 있습니다!
-                        </h5>
-                        <div class="popupBoxImg"><img src="assets/images/img_popupBox.gif" alt=""></div>
-                        <p class="openBoxNumber">오픈 가능한 출석상자 : <span>2</span>개</p>
-                    </div><!-- firstPopupBox end -->
-                    <button type="button" class="btn_close_modar">닫기</button>                
-                </div><!-- modar_inner end -->
-            </div><!-- modar_container end -->
-        </section>
-        <!-- 실물 경품 당첨 팝업 end -->
-
-        <!-- 로딩지연 start -->
-        <section id="modarLoadingDelay" class="modarPopup">
-            <div class="modar_container">
-                <div class="modar_inner">
-                    <div class="modar_body">
-                        <!-- 팝업내용영역 start -->
-                        <p class="popupTextMd loadingDelayText">
-                            예기치 못한 문제로 인해 로딩이 지연되고 있습니다. <br />
-                            다시 시도해 주세요.
-                        </p>
-                        <button type="button" class="js_modar_close">확인</button> 
-                    </div><!-- modar_body end -->
-                    <button type="button" class="btn_close_modar">닫기</button>                
-                </div><!-- modar_inner end -->
-            </div><!-- modar_container end -->
-        </section>
-        <!-- 로딩지연 end -->
-
-        <!-- PC방 마일리지 쿠폰 당첨 팝업 start -->
-        <section id="modarMileageCoupon" class="modarPopup">
-            <div class="modar_container">
-                <div class="modar_inner">
-                    <div class="modar_body">
-                        <!-- 팝업내용영역 start -->
-                        <h5 class="popupTextLg">축하드립니다!</h5>
-                        <p class="popupTextMd">PC방 마일리지 쿠폰</p>
-                        <p class="popupTextXs ta_c">PC방 쿠폰을 선택해 주세요. <br />획득 후에는 변경이 불가합니다.</p>
-                        <ul class="MileageCouponBtn">
-                            <!-- [전달사항] 마일리지 쿠폰 품절시 li 태그에 .disabled -->
-                            <li><button type="button">피카 마일리지 쿠폰</button></li>
-                            <li><button type="button">게토 마일리지 쿠폰</button></li>
-                        </ul>
-                        <button type="button" onclick="modarOpen('#modarCouponInfo');" id="btnCouponInfo"><span>쿠폰 사용 안내</span></button>
-                        <button type="button" class="js_modar_close disabled">확인</button> 
-                    </div><!-- modar_body end -->
-                    <button type="button" class="btn_close_modar">닫기</button>                
-                </div><!-- modar_inner end -->
-            </div><!-- modar_container end -->
-        </section>
-        <!-- PC방 마일리지 쿠폰 당첨 팝업 end -->
-        
-        <!-- PC방 마일리지 게토 start -->
-        <section id="modarGetoCoupon" class="modarPopup">
-            <div class="modar_container">
-                <div class="modar_inner">
-                    <div class="modar_body">
-                        <!-- 팝업내용영역 start -->
-                        <p class="popupTextMd">PC방 마일리지 쿠폰(게토)</p>
-                        <div class="pcCouponImg">
-                            <img src="assets/images/bg_getoCoupon.png" alt="">
-                            <p class="pcCouponNumber">3MDUHA4skghg3bj</p>
-                            <p class="pcCouponDate">// 유효기간 : 2023-12-31까지</p>
-                        </div>
-                        <button type="button" onclick="modarOpen('#modarCouponInfo');" id="btnCouponInfo" class="mb50"><span>쿠폰 사용 안내</span></button>
-                        <ul>
-                            <li>※ 게토PC방 포인트권 사용 안내
-                                <ul class="dotList ml10">
-                                    <li>게토PC방포인트 서비스 가맹이 완료된 매장에서 사용 가능합니다.
-                                        <ul class="dotList">
-                                            <li>좌석 로그인 전: PC방 로그인 화면의 ‘포인트로 결제’ 버튼 클릭 후 코드 입력</li>
-                                            <li>좌석 로그인 후: 화면 우측 상단의 요금 정보 창에서 ‘쿠폰 사용’ 버튼 클릭 후 코드 입력</li>
-                                        </ul>
-                                    </li>
-                                    <li>게토PC방포인트권의 유효기간은 2022.12.31까지입니다.</li>
-                                    <li>게토PC방포인트권은 입력 즉시 포인트가 충전됩니다.</li>
-                                    <li>지급된 포인트는 환불이 불가합니다.</li>
-                                    <li>유효하지 않은 게토PC방포인트권번호나 유효기간이 만료된 게토PC방포인트권은 등록할 수 없습니다.<br />(10회 이상 잘못 입력 시, 24시간 경과 후 재등록 가능)</li>
-                                    <li>이벤트로 지급된 게토PC방포인트권 사용에 이상이 있는 경우, 발로란트 고객지원을 통해 문의해 주세요.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!-- modar_body end -->
-                    <button type="button" class="btn_close_modar">닫기</button>                
-                </div><!-- modar_inner end -->
-            </div><!-- modar_container end -->
-        </section>
-        <!-- PC방 마일리지 게토 end -->
-
-        <!-- PC방 마일리지 피카 start -->
-        <section id="modarPicaCoupon" class="modarPopup">
-            <div class="modar_container">
-                <div class="modar_inner">
-                    <div class="modar_body">
-                        <!-- 팝업내용영역 start -->
-                        <p class="popupTextMd">PC방 마일리지 쿠폰(피카)</p>
-                        <div class="pcCouponImg">
-                            <img src="assets/images/bg_picaCoupon.png" alt="">
-                            <p class="pcCouponNumber">3MDUHA4skghg3bj</p>
-                            <p class="pcCouponDate">// 유효기간 : 2023-12-31까지</p>
-                        </div>
-                        <button type="button" onclick="modarOpen('#modarCouponInfo');" id="btnCouponInfo" class="mb50"><span>쿠폰 사용 안내</span></button>
-                        <ul>
-                            <li>※ 피카 마일리지권 사용 안내 
-                                <ul class="numList ml10">
-                                    <li>피카플레이 앱 설치 후 ‘쿠폰함’ - ‘쿠폰등록’에서 등록하여 사용 가능합니다.</li>
-                                    <li>PC방 마일리지 사용은 '마일리지 가맹PC방'에서만 사용 가능하며, PC방 찾기 사이트(https://www.picaplay.com/pcbang/main.do) 내 검색 옵션 중 편의시설에 피카페이 체크 후 검색해 주세요.</li>
-                                    <li>마일리지권은 2022.12.31까지 등록 가능하며, 등록된 마일리지는 등록 후 30일 이내에만 사용이 가능합니다. 30일 이후에는 자동 소멸되오니 유의해주시길 바랍니다. </li>
-                                    <li>마일리지 사용과 관련한 문의 및 불편사항은 피카플레이앱 내 1:1 문의하기나 이메일을 통해 문의해 주세요.(help_craftbox@mediaweb.co.kr)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!-- modar_body end -->
-                    <button type="button" class="btn_close_modar">닫기</button>                
-                </div><!-- modar_inner end -->
-            </div><!-- modar_container end -->
-        </section>
-        <!-- PC방 마일리지 피카 end -->
-
-        <!-- 쿠폰사용안내 start -->
-        <section id="modarCouponInfo" class="modarPopup">
-            <div class="modar_container">
-                <div class="modar_inner">
-                    <div class="modar_body">
-                        <!-- 팝업내용영역 start -->
-                        <p class="popupTextMd">쿠폰 사용 안내</p>
-                        <ul class="tab_btn_group">
-                            <li class="on"><a href="#tab_detail01">게토 마일리지 쿠폰</a></li>
-                            <li><a href="#tab_detail02">피카 마일리지 쿠폰</a></li>
-                        </ul><!-- tab_btn_group end -->
-    
-                        <div class="tab_detail" id="tab_detail01">
-                            <div class="tab_detail_inner">
-                                <p>1. 포인트 사용이 가능한 게토 PC방에서 로그인하기</p>
-                                <p>2. 화면 우측 상단의 요금 정보창에서 ‘PC방 이용권' 버튼 클릭</p>
-                                <p class="ta_c"><img src="assets/images/img_getoCoupon.jpg" alt=""></p>
-                                <p>3. 발급받은 쿠폰 번호를 입력</p>
+                            <div class="item">
+                                <p class="days"><span>DAY 3</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
+                                    <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
                             </div>
-                            <div class="couponInfoList">
-                                ※ 게토PC방 포인트권 사용 안내 게토PC방포인트 서비스 가맹이 완료된 매장에서 사용 가능합니다. 
-                                <ul class="dotList ml10">
-                                    <li>게토PC방포인트 서비스 가맹이 완료된 매장에서 사용 가능합니다.
-                                        <ul class="dotList">
-                                            <li>좌석 로그인 전: PC방 로그인 화면의 ‘포인트로 결제’ 버튼 클릭 후 코드 입력 </li>
-                                            <li>좌석 로그인 후: 화면 우측 상단의 요금 정보 창에서 ‘쿠폰 사용’ 버튼 클릭 후 코드 입력</li>
-                                        </ul>
-                                    </li>
-                                    <li>게토PC방포인트권의 유효기간은 2022.12.31까지입니다.</li>
-                                    <li>게토PC방포인트권은 입력 즉시 포인트가 충전됩니다.</li>
-                                    <li>지급된 포인트는 환불이 불가합니다.</li>
-                                    <li>유효하지 않은 게토PC방포인트권번호나 유효기간이 만료된 게토PC방포인트권은 등록할 수 없습니다. (10회 이상 잘못 입력 시, 24시간 경과 후 재등록 가능)</li>
-                                    <li>이벤트로 지급된 게토PC방포인트권 사용에 이상이 있는 경우, 발로란트 고객지원을 통해 문의해 주세요.</li>
-                                </ul>
+                            <div class="item">
+                                <p class="days"><span>DAY 4</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
+                                    <p class="itemName"><span>레디어나이트 포인트 5개</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 5</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_allitem_day5.png" alt=""></div>
+                                    <p class="itemName"><span>길잡이 플레이어 카드</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 6</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
+                                    <p class="itemName"><span>레디어나이트 포인트 10개</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- [전달사항] 상품 획득전 추가 클래스 x / 상품 획득후 추가 클래스 .on / 응모 클릭후 추가 클래스 .end -->
+                                <a href="#" class="premiumBanner">
+                                    <div class="premiumBannerInner">
+                                        <p class="text">프리미엄 경품 응모 찬스!</p>
+                                        <p class="btn">응모하기</p>
+                                    </div>
+                                </a>
+                                <p class="days"><span>DAY 7</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
+                                    <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 8+</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
+                                    <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                        </div><!-- itemGroup end -->
+                    </div><!-- allCheck end -->
+                    <div class="pcCheck">
+                        <p class="CheckTitle"><span>PC방</span></p>
+                        <div class="itemGroup">
+                            <div class="item">
+                                <p class="days"><span>DAY 1</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_pcitem_day1.png" alt=""></div>
+                                    <p class="itemName"><span>PC방 마일리지 쿠폰</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 2</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
+                                    <p class="itemName"><span>레디어나이트 포인트 5개</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 3</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
+                                    <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 4</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
+                                    <p class="itemName"><span>레디어나이트 포인트 5개</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 5</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_pcitem_day5.png" alt=""></div>
+                                    <p class="itemName"><span>물어 스프레이</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 6</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_point.png" alt=""></div>
+                                    <p class="itemName"><span>레디어나이트 포인트 10개</span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- [전달사항] 상품 획득전 추가 클래스 x / 상품 획득후 추가 클래스 .on / 응모 클릭후 추가 클래스 .end -->
+                                <a href="#" class="premiumBanner">
+                                    <div class="premiumBannerInner">
+                                        <p class="text">프리미엄 경품 응모 찬스!</p>
+                                        <p class="btn">응모하기</p>
+                                    </div>
+                                </a>
+                                <p class="days"><span>DAY 7</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
+                                    <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p class="days"><span>DAY 8+</span></p>
+                                <div class="itemBox">
+                                    <div class="itemImg"><img src="assets/images/img_item_box.png" alt=""></div>
+                                    <p class="itemName"><span>무결점 출석상자<a href="#slideSection" class="btnQuestion">자세히보기</a></span></p>
+                                    <button type="button" class="btnGet">보상받기</button>
+                                </div>
+                            </div>
+                        </div><!-- itemGroup end -->
+                    </div><!-- pcCheck end -->
+                </div><!-- dayCheckTable end -->
+            </div><!-- inner end -->
+        </div><!-- dayCheck end -->
+        <div class="slideSection section" id="slideSection">
+            <div class="slideSectionInner">
+                <strong class="titleMd colorWhite">사이VAL대학교 신입생의 하루 일상이 여기에 전부 담겨있습니다.</strong>
+                <strong class="titleLg colorWhite">
+                    <span class="svgEffectRelative">
+                        무결점 출석상자
+                        <em class="svgEffect svgEffect03 back">
+                            <svg width="786" height="156" viewBox="0 0 786 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector 94" d="M477.452 131.074C405.224 135 317.418 135 281.54 135C220.641 135 146.525 129.523 82.3219 117.987C48.3321 111.88 11.9823 100.537 6.78927 86.1412C0.494406 68.6915 33.4699 52.2898 48.3322 46.8793C63.9108 41.2082 86.0986 34.2283 112.535 28.1209C138.972 22.0135 180.987 14.5973 228.667 11.1087C262.618 8.62461 328.652 5 379.732 5C425.428 5.00134 482.593 6.35742 557.706 11.1087C592.168 13.2886 629.934 18.0873 656.371 21.5772C684.223 25.2541 713.964 32.4833 728.599 37.282C756.652 46.4806 781 59.7453 781 73.9264C781 89.9309 758.812 106.645 744.178 113.625C723.821 123.334 690.034 131.168 663.924 135C637.815 138.831 611.051 142.205 578.478 145.034C545.904 147.864 518.524 148.962 482.646 148.962C436.126 148.962 369.346 153.548 310.809 148.962" stroke="#FF4655" stroke-width="10" stroke-linecap="round"/>
+                            </svg>
+                        </em>                     
+                    </span>
+                    전격 출현!
+                </strong>
+                <p class="textMd colorGray">
+                    레디어나이트 포인트, 게이밍 기어, 문화상품권, 인게임 아이템 등 다양한 경품을 100% 획득할 수 있는<br/> 
+                    무결점 출석상자가 등장했습니다. 지금 바로 출석체크 미션을 달성하고 경품을 확인해보세요!
+                </p>
+                <div class="slideBoxWrap">
+                    <div class="slideBox">
+                        <div class="swiper-wrapper">
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem01.png" alt="KFC 징거박스 이미지">
+                                <p class="slideItemName">KFC 징거박스</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem02.png" alt="Kingston hyper Cloud II Wireless 이미지">
+                                <p class="slideItemName">Kingston hyper Cloud II Wireless</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem03.png" alt="프라임타임 총기장식 이미지">
+                                <p class="slideItemName">프라임타임 총기장식</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem04.png" alt="발로란트 슬리퍼 + 양말 이미지">
+                                <p class="slideItemName">발로란트 슬리퍼 + 양말</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem05.png" alt="팔씨름 플레이어 카드 이미지">
+                                <p class="slideItemName">팔씨름 플레이어 카드</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem06.png" alt="컬쳐랜드 상품권 이미지">
+                                <p class="slideItemName">컬쳐랜드 상품권</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem07.png" alt="발로란트 굿즈 2종 세트 이미지">
+                                <p class="slideItemName">발로란트 굿즈 2종 세트</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem08.png" alt="힘의탑 총기장식 이미지">
+                                <p class="slideItemName">힘의탑 총기장식</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem09.png" alt="팀에이스 장패드 이미지">
+                                <p class="slideItemName">팀에이스 장패드</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem10.png" alt="RAZER Viper Ultimate Mercury 이미지">
+                                <p class="slideItemName">RAZER Viper Ultimate Mercury</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem11.png" alt="빈털터리 스프레이 이미지">
+                                <p class="slideItemName">빈털터리 스프레이</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem12.png" alt="발로란트 후드티 이미지">
+                                <p class="slideItemName">발로란트 후드티</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem13.png" alt="버거킹 와퍼세트 이미지">
+                                <p class="slideItemName">버거킹 와퍼세트</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem14.png" alt="레디어나이트 포인트 이미지">
+                                <p class="slideItemName">레디어나이트 포인트</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem15.png" alt="발로란트 굿즈 4종 세트 이미지">
+                                <p class="slideItemName">발로란트 굿즈 4종 세트</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem16.png" alt="이삭토스트 5,000원 이미지">
+                                <p class="slideItemName">이삭토스트 5,000원</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem17.png" alt="Logitech G PRO X 게이밍 키보드 이미지">
+                                <p class="slideItemName">Logitech G PRO X 게이밍 키보드</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem18.png" alt="그건 가르쳐줄 수 없어 스프레이 이미지">
+                                <p class="slideItemName">그건 가르쳐줄 수 없어 스프레이</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem19.png" alt="롯데리아 화이어윙 4조각 이미지">
+                                <p class="slideItemName">롯데리아 화이어윙 4조각</p>
+                            </div>
+                            <div class="slideItem swiper-slide">
+                                <img src="assets/images/img_checkBoxItem20.png" alt="길잡이 플레이어 카드 이미지">
+                                <p class="slideItemName">길잡이 플레이어 카드</p>
                             </div>
                         </div>
-                        <div class="tab_detail" id="tab_detail02">
-                            <div class="tab_detail_inner">
-                                <p>1. 구글플레이 스토어 또는 앱스토어 ‘피카플레이’ 검색 후 다운로드</p>
-                                <p>2. 피카플레이 APP 실행 및 회원가입 완료</p>
-                                <p>3. 홈 화면에서 ‘메뉴 : 쿠폰함’ 하위메뉴 ‘쿠폰등록’으로 이동</p>
-                                <p class="ta_c"><img src="assets/images/img_picaCoupon.jpg" alt=""></p>
-                                <p>4. 발급받은 쿠폰 번호를 입력</p>
-                            </div>
-                            <div class="couponInfoList">
-                                ※ 피카 마일리지권 사용 안내
-                                <ul class="dotList ml10">
-                                    <li> 피카플레이 앱 설치 후 ‘쿠폰함’ - ‘쿠폰등록’에서 등록하여 사용 가능합니다.</li>
-                                    <li>PC방 마일리지 사용은 '마일리지 가맹PC방'에서만 사용 가능하며, PC방 찾기 사이트(https://www.picaplay.com/pcbang/main.do)내 검색 옵션 중 편의시설에 피카페이 체크 후 검색해 주세요.</li>
-                                    <li>마일리지권은 2022.12.31까지 등록 가능하며, 등록된 마일리지는 등록 후 30일 이내에만 사용이 가능합니다. 30일 이후에는 자동 소멸되오니 유의해주시길 바랍니다.</li>
-                                    <li>마일리지 사용과 관련한 문의 및 불편사항은 피카플레이앱 내 1:1 문의하기나 이메일을 통해 문의해 주세요.(help_craftbox@mediaweb.co.kr)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!-- modar_body end -->
-                    <button type="button" class="btn_close_modar">닫기</button>                
-                </div><!-- modar_inner end -->
-            </div><!-- modar_container end -->
-        </section>
-        <!-- 쿠폰사용안내 end -->
-
+                    </div><!-- slideBox end -->
+                </div><!-- slideBoxWrap end -->
+                <div class="slideBoxScrollbar">
+                    <div class="pagination"></div>
+                    <p class="slideBoxInfo">* 상품 별 각각 일정 확률에 따라 획득이 가능하며, 일부 품목이 조기 소진될 수 있습니다.</p>
+                </div>
+            </div>
+        </div><!-- slideSection end -->
+        <div class="premiumEvent section">
+            <div class="premiumEventInner">
+                <strong class="titleSm colorDark">
+                    1일 1VAL 출석체크 
+                    <span class="svgEffectRelative"> 7일 출석<em class="svgEffect svgEffect04_1 back"><svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector 90" d="M3.42875 9.18477C3.18432 6.1977 3.53625 1.56009 7.63612 3.43202C12.0146 5.43115 9.8351 11.533 4.97995 10.9625C2.05264 10.6186 2.65024 5.49021 4.9587 4.8702C6.2209 4.53121 8.4236 5.05531 8.76233 6.48817C9.12179 8.00872 5.29307 7.74658 4.57621 7.74658" stroke="#FF4655" stroke-width="6" stroke-linecap="round"/></svg></em><em class="svgEffect svgEffect04_2 back"><svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector 91" d="M3.42875 9.18477C3.18432 6.1977 3.53625 1.56009 7.63612 3.43202C12.0146 5.43115 9.8351 11.533 4.97995 10.9625C2.05264 10.6186 2.65024 5.49021 4.9587 4.8702C6.2209 4.53121 8.4236 5.05531 8.76233 6.48817C9.12179 8.00872 5.29307 7.74658 4.57621 7.74658" stroke="#FF4655" stroke-width="6" stroke-linecap="round"/></svg></em><em class="svgEffect svgEffect04_3 back"><svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector 88" d="M3.37768 7.78398C3.51718 11.2221 3.95454 12.3149 7.3724 11.9249C10.0136 11.6236 8.80509 9.21881 8.12612 7.39698C6.60874 3.3255 4.35641 2.40347 3.07619 7.47438C2.54894 9.56279 4.91183 13.922 5.45041 10.88C5.91707 8.2443 3.37768 7.51627 3.37768 9.87381" stroke="#FF4655" stroke-width="6" stroke-linecap="round"/></svg></em><em class="svgEffect svgEffect04_4 back"><svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector 89" d="M3.42875 9.18477C3.18432 6.1977 3.53625 1.56009 7.63612 3.43202C12.0146 5.43115 9.8351 11.533 4.97995 10.9625C2.05264 10.6186 2.65024 5.49021 4.9587 4.8702C6.2209 4.53121 8.4236 5.05531 8.76233 6.48817C9.12179 8.00872 5.29307 7.74658 4.57621 7.74658" stroke="#FF4655" stroke-width="6" stroke-linecap="round"/></svg></em></span>을 완료한 모든 요원에게
+                </strong>
+                <strong class="titleLg colorDark">
+                    <span class="svgEffectRelative">
+                        프리미엄 경품<em class="svgEffect svgEffect05 back"><svg width="594" height="17" viewBox="0 0 594 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector 95" d="M7 10C124.068 10 237.443 10 354.499 10C396.087 10 437.518 7 479.092 7C500.682 7 522.271 7 543.861 7C555.34 7 575.882 7 587 7" stroke="#FF4655" stroke-width="14" stroke-linecap="round"/></svg></em></span>의
+                    행운이!
+                </strong>
+                <p class="textMd colorDark">
+                    집에서든, PC방에서든 OK! 7일 출석을 달성한 모든 요원분들에게<br />
+                    추첨을 통해 고급 게이밍 모니터와 그래픽카드를 드립니다.
+                </p>
+                <div class="premiumItem">
+                    <ul>
+                        <li>
+                            <span>10명</span>
+                            <p class="premiumItemImg"><img src="assets/images/img_premiumItem01.png" alt=""></p>
+                            <p class="premiumItemName pt20">BENQ ZOWIE XL2546 24인치</p>
+                        </li>
+                        <li>
+                            <span>10명</span>
+                            <p class="premiumItemImg"><img src="assets/images/img_premiumItem02.png" alt=""></p>
+                            <p class="premiumItemName">MSI Geforce RTX3070TI<br />게이밍 X 트리오 D6X 8GB 트라이프로져2</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- premiumEvent end -->
+        <div class="eventInfo">
+            <div class="eventInfoInner">
+                <strong>이벤트 유의사항</strong>
+                <ul>
+                    <li>PVP 게임 진행 후 이벤트 페이지에 로그인해야 출석으로 인정되며 보상을 획득할 수 있습니다. </li>
+                    <li>모든 보상은 이벤트 기간이 종료되면 획득할 수 없습니다.</li>
+                    <li>인게임 상품을 이미 보유한 경우 중복 획득이 불가능하며, 다른 상품으로 교환도 불가능합니다.</li>
+                    <li>이벤트 참여 및 배송 관련된 안내사항은 <span>공지사항</span>을 반드시 참조해주시기 바랍니다.</li>
+                </ul>
+            </div>
+        </div><!-- eventInfo end -->
     </div><!-- wrap end -->
 
     <!-- 라이엇바 하단 -->
@@ -317,7 +400,6 @@
     <script src="assets/js/lib/skrollr.min.js"></script>
     <script src="assets/js/lib/swiper.min.js"></script>
     <script src="assets/js/ui.js"></script>
-    <script src="assets/js/popup.js"></script>
-
+    
 </body>
 </html>
