@@ -17,7 +17,7 @@
 .modarPopup.show {opacity: 1;visibility: visible;-webkit-transition-delay: 0s;transition-delay: 0s;}
 .modarPopup.show .modarInner {-webkit-animation: slideInUp 0.3s 50ms;animation: slideInUp 0.3s 50ms;-webkit-animation-fill-mode: backwards;animation-fill-mode: backwards;}
 
-.firstPopupBox{opacity: 0;position: absolute;left: 0;top: 0;display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100%;height: 100%;background: #ECE8E1;z-index: -1;transition: .4s;-webkit-transition: .4s;}
+.firstPopupBox{opacity: 0;position: absolute;left: 0;top: 0;display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100%;height: 100%;padding-top: 30px;background: #ECE8E1;z-index: -1;transition: .4s;-webkit-transition: .4s;}
 .modarPopup.firstPopupBoxOpen .modarInner{min-height: 680px;}
 .modarPopup.firstPopupBoxOpen .modarBody{display: none;}
 .modarPopup.firstPopupBoxOpen .firstPopupBox{opacity: 1;z-index: 11;}

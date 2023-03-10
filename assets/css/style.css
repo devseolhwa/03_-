@@ -4,7 +4,6 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .floating{display: none;position: fixed;/* right: 60px; *//* bottom: 60px; */right: 50px;bottom: 45px;width: 320px;height: 141px; background-image: url(../images/bg_floating.png);background-position: center;background-repeat: no-repeat;z-index: 99;}
 .floating a{display: flex;width: 100%;height: 100%;align-items: center;justify-content: center;}
 .floating a p{padding-left: 60px;padding-right: 30px;background-image: url(../images/icon_floating.png);background-position: center left;background-repeat: no-repeat;font-size: 16px;color: #ECE8E1;line-height: 22px;font-weight: 700;}
-.floating a p span{font-size: 15px;font-weight: 900;}
 
 /********** 출석체크페이지 ***********/
 .visual {position: relative;min-width: 1440px;overflow: hidden;}
@@ -174,7 +173,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .premiumBanner.on .premiumBannerInner:after {opacity: 1;-webkit-transform: translate(0);-ms-transform: translate(0);transform: translate(0);-webkit-transition: opacity 1s, -webkit-transform 0.8s;transition: opacity 1s, transform 0.8s, -webkit-transform 0.8s;}
 .premiumBanner.on .premiumBannerInner .btn {opacity: 1;background: #ECE8E1;color: #FF4655;-webkit-transform: translateY(0px);-ms-transform: translateY(0px);transform: translateY(0px);-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;transition: opacity 0.8s, transform 0.8s, -webkit-transform 0.8s;}
 
-.premiumBanner.end {background: #FF4655;animation-play-state: paused;}
+.premiumBanner.end {background: #FF4655;}
 .premiumBanner.end .premiumBannerInner:before{border-top-color: #FF4655;}
 .premiumBanner.end .premiumBannerInner .btn{background: #ECE8E1;color: #FF4655;}
 
@@ -266,6 +265,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .teacherDetail .teacherVideoList > li .teacherVideo iframe{}
 .teacherDetail .teacherVideoList > li .teacherVideoTitle{padding: 12px 8px;font-size: 20px;color: #fff;line-height: 150%;font-weight: 600;text-align: center;opacity: 0.8;}
 
+.mobileFilter .floating{display: block;}
 .mobileFilter .slideSection{height: 100%;padding: 80px 0;}
 .mobileFilter .slideBox .slideItem{height: 100%;}
 .mobileFilter .slideBox .slideItem .slideItemName{font-size: 20px;}
