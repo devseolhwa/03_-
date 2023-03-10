@@ -122,7 +122,7 @@ $(document).ready(function(){
         speed: 800,
         centerMode: true,
         centerPadding : "200px", 
-        variableWidth: false,
+        variableWidth: true,
         infinite: true,
         swipeToSlide: true ,
         draggable: true,

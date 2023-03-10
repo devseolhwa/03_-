@@ -185,9 +185,10 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 
 .slideSection{display: flex;justify-content: center;align-items: center;height: 100vh;padding: 80px 0 0;background-color: #252525;box-sizing: border-box;}
 .slideSection .slideSectionInner{width: 100%;min-width: 1440px;}
-.slideBoxWrap{overflow: hidden;margin: 35px 0 20px;box-sizing: border-box;height: 100%;}
+.slideBoxWrap{overflow: hidden;margin: 35px 0 35px;box-sizing: border-box;height: 100%;}
 .slideBox{position: relative;height: 100%;/* min-height: 380px; */box-sizing: border-box;margin-bottom: 0 !important;}
 .slideBox:before{content: "";position: absolute;left: 0;top: 0;display: block;width: 100%;height: 100%;background-image: url(../images/bg_slideBox.png);background-position: center 20%;background-size: auto 80%;background-repeat: no-repeat;opacity: 0.3;}
+.slideBox .slick-slide{padding: 0 20px;}
 .slideBox .slideItem{/* width: 330px !important; */width: auto;height: 100%;opacity: 0.8;text-align: center;-webkit-transition: opacity 0.3s, -webkit-transform 0.8s;transition: opacity 0.3s, transform 0.8s, -webkit-transform 0.8s;height: calc(100vh - 565px);}
 .slideBox .slideItem img{width: auto;height: auto;margin: 0 auto;transform: scale(0.7);-webkit-transition: opacity 0.3s, -webkit-transform 0.8s;transition: opacity 0.3s, transform 0.8s, -webkit-transform 0.8s;}
 .slideBox .slideItem .slideItemName{opacity: 0;font-size: 2.5vh;color: #ECE8E1;font-weight: 500;line-height: 150%;word-break: keep-all;text-align: center;-webkit-transition: opacity 0.2s, -webkit-transform 0.8s;transition: opacity 0.2s, transform 0.8s, -webkit-transform 0.8s;}
@@ -201,6 +202,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .slideBoxScrollbar .pagination .slick-dots{bottom: 0;display: flex !important;height: 2px;}
 .slideBoxScrollbar .pagination .slick-dots li{flex: 1;height: 2px;margin: 0;cursor: inherit;transition: .5s;-webkit-transition: .5s;}
 .slideBoxScrollbar .pagination .slick-dots li.slick-active{flex: 1;height: 2px;background: #fff;}
+.slideBoxScrollbar .pagination .slick-dots li button{width: 100%;height: 100%;padding: 0;cursor: inherit;}
 .slideBoxInfo{margin-top: 15px;font-size: 16px;line-height: 170%;color: #C4C1BC;font-weight: 500;text-align: right;}
 
 .premiumEvent{display: flex;justify-content: center;align-items: center;height: 100vh;padding: 80px 0 0;box-sizing: border-box;}
@@ -269,6 +271,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .mobileFilter .slideBox .slideItem .slideItemName{font-size: 20px;}
 .mobileFilter .premiumEvent{height: 100%;padding: 80px 0;}
 .mobileFilter .premiumItem{height: 100%;}
+.mobileFilter .svgEffect.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
 
 @media screen and (min-height: 1024px){
     .slideBox .slideItem{height: 100%;}
