@@ -313,7 +313,6 @@ word-break: keep-all;}
 .paging.first #pagePrev{display: none;}
 .paging.last #pageNext{display: none;}
 
-.mobileFilter .floating{display: block !important;}
 .mobileFilter .slideSection{height: 100%;padding: 80px 0;}
 .mobileFilter .slideBox .slideItem{height: 100%;}
 .mobileFilter .slideBox .slideItem .slideItemName{font-size: 20px;}
