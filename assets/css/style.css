@@ -255,13 +255,13 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .teacherDetail.show{opacity: 1;visibility: visible;}
 .teacherDetail .teacherImg{position: absolute;bottom: 0;left: -277px;z-index: 1;-webkit-animation: leftfadeAni 1s ease-in-out both;animation: leftfadeAni 1s ease-in-out both;}
 .teacherDetail .teacherTitle{display: flex;flex-direction: column;align-items: flex-end;}
-.teacherDetail .teacherName{position: relative;display: block;width: 700px;padding-bottom: 45px;font-size: 100px;color: #ECE8E1;line-height: 100%;font-weight: 800;text-align: left;-webkit-animation: leftfadeAni 1.2s ease-in-out both;animation: leftfadeAni 1.2s ease-in-out both;z-index: 1;}
+.teacherDetail .teacherName{position: relative;display: block;width: 705px;padding-bottom: 45px;font-size: 100px;color: #ECE8E1;line-height: 100%;font-weight: 800;text-align: left;-webkit-animation: leftfadeAni 1.2s ease-in-out both;animation: leftfadeAni 1.2s ease-in-out both;z-index: 1;}
 .teacherDetail .teacherName:before{content:"";display: none;position: absolute;top: -4px;right: 726px;width: 67px;height: 251px;background-image: url(../images/img_teacherNameLine.png);background-repeat: no-repeat;}
 .teacherDetail .teacherName:after{content:"";display:block;position:absolute;bottom: 22px;right: 0;width:758px;height: 1px;background-color:rgba(236, 232, 225, 0.5);transform: scaleX(0);transform-origin: left center;transition: transform 1000ms ease-in-out;}
 .teacherDetail.active .teacherName:before{display: block;}
 .teacherDetail.active .teacherName:after{transform: scaleX(1);}
-.teacherDetail .teacherText{width: 700px;-webkit-animation: leftfadeAni 1.5s ease-in-out both;animation: leftfadeAni 1.5s ease-in-out both;text-align: left;z-index: 1;}
-.teacherDetail .teacherText span{font-size: 26px;color: #ECE8E1;line-height: 150%;font-weight: 400;opacity: 0.7;}
+.teacherDetail .teacherText{width: 705px;-webkit-animation: leftfadeAni 1.5s ease-in-out both;animation: leftfadeAni 1.5s ease-in-out both;text-align: left;z-index: 1;}
+.teacherDetail .teacherText span{font-size: 26px;color: #fff;line-height: 150%;font-weight: 400;opacity: 0.7;}
 .teacherDetail .teacherVideoList{position: relative;display: flex;align-items: center;justify-content: center;margin: 62px 0 0;z-index: 2;}
 .teacherDetail .teacherVideoList > li{width: 416px;background: rgba(255, 255, 255,0.2);}
 .teacherDetail .teacherVideoList > li + li{margin-left: 4px;}
@@ -319,7 +319,7 @@ word-break: keep-all;}
 .mobileFilter .slideBox .slideItem .slideItemName{font-size: 20px;}
 .mobileFilter .premiumEvent{height: 100%;padding: 80px 0;}
 .mobileFilter .premiumItem{height: 100%;}
-.mobileFilter .svgEffect svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
+.mobileFilter .svgEffect.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
 
 @media screen and (min-height: 1024px){
     .slideBox .slideItem{height: 100%;}
