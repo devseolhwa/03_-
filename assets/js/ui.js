@@ -16,6 +16,7 @@ $(document).ready(function(){
         if(0 > filter.indexOf(navigator.platform.toLowerCase())){
             //alert("Mobile");
             $("body").addClass("mobileFilter");
+            $(".videoItem").addClass("active");
         }else{
             //alert("PC");
             snapscroll();
