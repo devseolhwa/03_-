@@ -319,7 +319,7 @@ word-break: keep-all;}
 .mobileFilter .slideBox .slideItem .slideItemName{font-size: 20px;}
 .mobileFilter .premiumEvent{height: 100%;padding: 80px 0;}
 .mobileFilter .premiumItem{height: 100%;}
-.mobileFilter .svgEffect.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
+.mobileFilter .svgEffect svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
 
 @media screen and (min-height: 1024px){
     .slideBox .slideItem{height: 100%;}
