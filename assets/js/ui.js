@@ -17,9 +17,19 @@ $(document).ready(function(){
             //alert("Mobile");
             $("body").addClass("mobileFilter");
             $(".videoItem").addClass("active");
+            $(".floating").show();
         }else{
             //alert("PC");
             snapscroll();
+
+            // floating 스크롤후 나타나기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $(".floating").fadeIn("slow");
+                }else {
+                    $(".floating").fadeOut("slow");
+                }
+            });
         }
     }
 
@@ -68,31 +78,6 @@ $(document).ready(function(){
             });
         });
     }
-
-    /* gsap.registerPlugin(ScrambleTextPlugin);
-
-    var $textElement01 = $("#textElement01");
-    var $textElement02 = $("#textElement02");
-    var $textElement03 = $("#textElement03");
-    var $textElement04 = $("#textElement04");
-
-    let textTimeL = gsap.timeline({ 
-        defaults: {duration: 2, ease: "power1.inOut", yoyo: false,}
-    })
-
-    textTimeL.to($textElement01, {scrambleText:{text:"들어간다, 적을 본다, 쏜다, 끝! 참 쉽죠?", chars:"들어간다, 적을 본다, 쏜다, 끝! 참 쉽죠?"}});
-    textTimeL.to($textElement02, {scrambleText:{text:"된모만 믿고 따라오면 당신도 충분히 가능합니다.", chars:"된모만 믿고 따라오면 당신도 충분히 가능합니다."}});
-    textTimeL.to($textElement03, {scrambleText:{text:"침착하게, 하나씩, 차근차근 따라오면 끝!", chars:"침착하게, 하나씩, 차근차근 따라오면 끝!"}});
-    textTimeL.to($textElement04, {scrambleText:{text:"헤매고만 있던 나의 VAL생, 이제 버니와 다시 일어설 시간입니다.", chars:"헤매고만 있던 나의 VAL생, 이제 버니와 다시 일어설 시간입니다."}}); */
-
-    // floating 스크롤후 나타나기
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $(".floating").fadeIn("slow");
-        }else {
-            $(".floating").fadeOut("slow");
-        }
-    });     
 
     // 상품전체보기
     $("#btnTable").click(function(e){
