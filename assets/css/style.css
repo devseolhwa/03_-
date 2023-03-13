@@ -139,6 +139,8 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .itemBox .itemName {display: flex;justify-content: center;align-items: center;position: absolute;left: 12px;bottom: 10px;width: calc(100% - 24px);height: 40px;font-size: 14px;color: #444;font-weight: 600;line-height: 140%;text-align: center;word-break: keep-all;font-family: "Pretendard", "Apple SD Gothic Neo";z-index: 1;}
 .itemBox .itemName .total{font-size: 20px;color: #222;font-weight: 700;}
 .itemBox .itemName .total em{margin-right: 3px;font-size: 50px;color: #FF4655;font-weight: 400;vertical-align: -2px;font-family: "Tungsten-Bold", "Apple SD Gothic Neo";}
+.itemBox .itemName.dayEight{justify-content: space-between;text-align: left;}
+.itemBox .itemName.dayEight .total{margin-left: 20px;}
 .itemBox .btnGet{opacity: 0;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #FF4655;font-size: 20px;color: #ECE8E1;font-weight: 700;text-align: center;pointer-events: none;cursor: pointer;transition: .3s;-webkit-transition: .3s;}
 .itemBox .btnGet span{position: relative;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;z-index: 2;}
 .btnQuestion {display: inline-block;width: 16px;height: 16px;margin-left: 4px;background-image: url(../images/icon_question.png);background-position: center;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: -3px;}

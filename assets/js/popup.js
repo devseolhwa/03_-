@@ -36,6 +36,7 @@ function modarOpen(_target) {
             $(".modarBody").removeClass("on");
         }, 3600);
     } else {
+        $(".modarBody").addClass("heightauto");
         $(_target).fadeIn("fast").addClass("show");
         $(_target).attr("tabindex", "0").focus();
         bodyScroll(true, $("body").width());

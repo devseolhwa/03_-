@@ -19,7 +19,7 @@
 .modarPopup.show .modarInner {-webkit-animation: slideInUp 0.3s 50ms;animation: slideInUp 0.3s 50ms;-webkit-animation-fill-mode: backwards;animation-fill-mode: backwards;}
 
 .firstPopupBox{opacity: 0;position: absolute;left: 0;top: 0;width: 100%;height: 100%;padding: 80px 60px 48px;background: #ECE8E1;box-sizing: border-box;z-index: -1;transition: .5s;-webkit-transition: .5s;}
-.firstPopupBox .popupBoxImg{position: absolute;top: 135px;left: 50%;width: 540px;margin-left: -270px;text-align: center;}
+.firstPopupBox .popupBoxImg{position: absolute;top: 135px;left: 50%;width: 540px;margin-left: -270px;text-align: center;z-index: -1;}
 .firstPopupBox .popupTextLg{margin-bottom: 320px;}
 .firstPopupBox .popupBoxImg .popupBoxImgGif{display: none;}
 .firstPopupBox .popupBoxImg .popupBoxImgPng{display: block;}
@@ -69,8 +69,9 @@
 #btnCouponInfo{display: block;margin: 0 auto 58px;padding-left: 18px;background-image: url(../images/icon_couponInfo.png);background-position: left center;background-repeat: no-repeat;cursor: pointer;}
 #btnCouponInfo span{font-size: 14px;font-weight: 600;line-height: 140%;text-align: center;color: #222;border-bottom: 1px solid #222;}
 .pcCouponImg{position: relative;text-align: center;}
-.pcCouponNumber{position: absolute;top: 105px;left: 117px;font-size: 56px;color: #000;font-weight: 400;font-family: "Tungsten-Bold", "Apple SD Gothic Neo";}
-.pcCouponDate{position: absolute;top: 190px;left: 140px;font-size: 21px;font-weight: 700;color: #8B978F;}
+.pcCouponInfo{position: absolute;top: 105px;left: 72px;width: 400px;display: flex;justify-content: center;flex-direction: row;flex-wrap: wrap;}
+.pcCouponNumber{font-size: 56px;color: #000;font-weight: 400;font-family: "Tungsten-Bold", "Apple SD Gothic Neo";}
+.pcCouponDate{font-size: 21px;font-weight: 700;color: #8B978F;}
 .numList {counter-reset:list-number;}
 .numList > li{position: relative;padding-left: 19px;font-size: 16px;color: #5C5852;font-weight: 500;line-height: 170%;word-break: keep-all;counter-increment: list-number;}
 .numList > li:before{content: counter(list-number)'.';position: absolute;left: 0;top: 0;display: block;}

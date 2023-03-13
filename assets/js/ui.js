@@ -206,7 +206,7 @@ $(document).ready(function(){
     $(".itemName").each(function () {
         let totalIs = $(this).children().is(".total");
         if (totalIs) {
-            $(this).addClass("ta_l");
+            $(this).addClass("dayEight");
         }
     });
 
