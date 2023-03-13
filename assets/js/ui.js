@@ -211,14 +211,15 @@ $(document).ready(function(){
     });
 
     // VAL포인트 특강
-    let videoBoard = new Masonry(".videoBoard", {
-        itemSelector: ".videoItem",
-        percentPosition: true,
-      });
-    imagesLoaded(".videoBoard").on("progress", function() {
-        videoBoard.layout();
-        
-    });
+    let videoBoardCheck = $(".videoBoard").children().is(".videoItem");
+    if (videoBoardCheck) {
+        let $grid = $(".videoBoard").imagesLoaded(function() {
+            $grid.masonry({
+                itemSelector: ".videoItem",
+                fitwidth: true
+            });
+        });
+    }
     function videoItem(){
         $(".videoItem").each(function(){
             let $videoItem = $(this);

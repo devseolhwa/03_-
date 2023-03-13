@@ -235,7 +235,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 #errorBtn {width: 280px;font-size: 20px;}
 
 /********** 발타강사페이지 ***********/
-.valtaTeacher{position: relative;background-size: cover;background-position: center;background-repeat: no-repeat;box-sizing: border-box;overflow: hidden;transition: 3.5s;-webkit-transition: 3.5s;}
+.valtaTeacher{position: relative;background-size: cover;background-position: center;background-repeat: no-repeat;box-sizing: border-box;overflow: hidden;-webkit-transition: 3.5s;-moz-transition: 3.5s;-o-transition: 3.5s;transition: 3.5s;}
 .valtaTeacher.doenmoTeacher{background-image: url(../images/bg_valtaTeacher01.jpg);}
 .valtaTeacher.bunnyTeacher{background-image: url(../images/bg_valtaTeacher02.jpg);}
 .valtaTeacherInner{position: relative;width: 1440px;margin: 0 auto;padding: 170px 0 0;box-sizing: border-box;}
@@ -253,14 +253,14 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .teacherTab .teacherWords p.teacherName {font-size: 18px;font-weight: 500;}
 .teacherDetail {display: none;position: relative;padding: 102px 0 66px;box-sizing: border-box;opacity: 0;visibility: hidden;-webkit-transition-property: opacity, visibility;transition-property: opacity, visibility;transition: 3.5s;-webkit-transition: 3.5s;}
 .teacherDetail.show{opacity: 1;visibility: visible;}
-.teacherDetail .teacherImg{position: absolute;bottom: 0;left: -277px;z-index: 1;-webkit-animation: leftfadeAni 1s ease-in-out both;animation: leftfadeAni 1s ease-in-out both;}
+.teacherDetail .teacherImg{position: absolute;bottom: 0;left: -277px;z-index: 1;-webkit-animation: leftfadeAni 1.5s ease-in-out both;animation: leftfadeAni 1.5s ease-in-out both;}
 .teacherDetail .teacherTitle{display: flex;flex-direction: column;align-items: flex-end;}
-.teacherDetail .teacherName{position: relative;display: block;width: 705px;padding-bottom: 45px;font-size: 100px;color: #ECE8E1;line-height: 100%;font-weight: 800;text-align: left;-webkit-animation: leftfadeAni 1.2s ease-in-out both;animation: leftfadeAni 1.2s ease-in-out both;z-index: 1;}
+.teacherDetail .teacherName{position: relative;display: block;width: 705px;padding-bottom: 45px;font-size: 100px;color: #ECE8E1;line-height: 100%;font-weight: 800;text-align: left;-webkit-animation: leftfadeAni 1.7s ease-in-out both;animation: leftfadeAni 1.7s ease-in-out both;z-index: 1;}
 .teacherDetail .teacherName:before{content:"";display: none;position: absolute;top: -4px;right: 726px;width: 67px;height: 251px;background-image: url(../images/img_teacherNameLine.png);background-repeat: no-repeat;}
-.teacherDetail .teacherName:after{content:"";display:block;position:absolute;bottom: 22px;right: 0;width:758px;height: 1px;background-color:rgba(236, 232, 225, 0.5);transform: scaleX(0);transform-origin: left center;transition: transform 1000ms ease-in-out;}
+.teacherDetail .teacherName:after{content:"";display: block;position: absolute;bottom: 22px;right: 0;width: 758px;height: 1px;background-color:rgba(236, 232, 225, 0.5);transform: scaleX(0);transform-origin: left center;transition: transform 1500ms ease-in-out;}
 .teacherDetail.active .teacherName:before{display: block;}
 .teacherDetail.active .teacherName:after{transform: scaleX(1);}
-.teacherDetail .teacherText{width: 705px;-webkit-animation: leftfadeAni 1.5s ease-in-out both;animation: leftfadeAni 1.5s ease-in-out both;text-align: left;z-index: 1;}
+.teacherDetail .teacherText{width: 705px;-webkit-animation: leftfadeAni 1.9s ease-in-out both;animation: leftfadeAni 1.9s ease-in-out both;text-align: left;z-index: 1;}
 .teacherDetail .teacherText span{font-size: 26px;color: #fff;line-height: 150%;font-weight: 400;opacity: 0.7;}
 .teacherDetail .teacherVideoList{position: relative;display: flex;align-items: center;justify-content: center;margin: 62px 0 0;z-index: 2;}
 .teacherDetail .teacherVideoList > li{width: 416px;background: rgba(255, 255, 255,0.2);}
@@ -270,7 +270,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .teacherDetail .teacherVideoList > li + li .teacherVideo:before{content: "";position: absolute;bottom: -1px;left: -4px;display: block;width: 4px;height: 1px;background-color: #D9D9D9;}
 .teacherDetail .teacherVideoList > li .teacherVideo p{position: relative;width: 100%;height: 225px;}
 .teacherDetail .teacherVideoList > li .teacherVideo img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;}
-.teacherDetail .teacherVideoList > li .teacherVideoTitle{padding: 12px 8px;font-size: 20px;color: #fff;line-height: 150%;font-weight: 600;text-align: center;opacity: 0.8;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.teacherDetail .teacherVideoList > li .teacherVideoTitle{padding: 12px 8px 13px;font-size: 20px;color: #fff;line-height: 150%;font-weight: 600;text-align: center;opacity: 0.8;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .videoZone{position: relative;overflow: hidden;}
 .videoZoneInner{position: relative;width: 1440px;margin: 0 auto;padding: 170px 0 100px;box-sizing: border-box;}
 .searchGroup {margin: 88px auto 80px;max-width: 660px;}
@@ -280,7 +280,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .searchGroup .searchInput input {width: 100%;margin: 0 20px;font-size: 28px;color: #222;font-weight: 700;text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.26);background: transparent;outline: none;}
 .searchGroup .searchInput input::placeholder{color: #C4C1BC;}
 .searchGroup #btnSearch {display: block;width: 48px;height: 48px;cursor: pointer;}
-.relatedList{display: none;position: absolute;top: 58px;left: 0;width: 100%;max-height: 440px;padding: 20px 0;background: #F6F4F0;box-sizing: border-box;overflow: auto;}
+.relatedList{display: none;position: absolute;top: 58px;left: 0;width: 100%;max-height: 440px;padding: 20px 0;background: #F6F4F0;box-sizing: border-box;overflow: auto;z-index: 2;}
 .relatedList ul li a{display: block;padding: 10px 40px;font-size: 24px;color: #444;font-weight: 500;text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.26);}
 .relatedList ul li a:hover{background-color: #EDEAE5;}
 .relatedList ul li a span{color: #FF4655;}
