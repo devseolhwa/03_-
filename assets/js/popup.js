@@ -18,14 +18,23 @@ function modarOpen(_target) {
 
     if (firstPopupBoxIs) {
         $(_target).addClass("firstPopupBoxOpen");
+        $(".modarBody").addClass("on");
+        $(".modarBody").removeClass("heightauto");
+        $(".firstPopupBox").fadeIn("fast");
         setTimeout(function() { 
             $(_target).fadeIn("fast").addClass("show");
             $(_target).attr("tabindex", "0").focus();
             bodyScroll(true, $("body").width());
         }, 100);
         setTimeout(function() { 
+            $(".modarBody").addClass("heightauto");
+        }, 3400);
+        setTimeout(function() { 
             $(_target).removeClass("firstPopupBoxOpen");
-        }, 3000);
+        }, 3600);
+        setTimeout(function() { 
+            $(".modarBody").removeClass("on");
+        }, 3600);
     } else {
         $(_target).fadeIn("fast").addClass("show");
         $(_target).attr("tabindex", "0").focus();

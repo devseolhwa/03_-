@@ -4,6 +4,7 @@ $(document).ready(function(){
     setTimeout(function(){
         svgEffect();
         textEffect();
+        videoItem();
     }, 1000);
     $(window).scroll(function(){
         svgEffect();
@@ -222,5 +223,25 @@ $(document).ready(function(){
             $(this).addClass("ta_l");
         }
     });
+
+    // VAL포인트 특강
+    $(".videoBoard").masonry({
+        itemSelector: ".videoItem",
+        fitwidth: true,
+        horizontalOrder: true
+    });
+    function videoItem(){
+        $(".videoItem").each(function(){
+            let $videoItem = $(this);
+
+            ScrollTrigger.create({
+                trigger: $videoItem,
+                start: "top bottom",
+                onEnter: function(){
+                    $videoItem.addClass("active");
+                }
+            });
+        });
+    }
 
 });

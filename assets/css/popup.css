@@ -9,19 +9,27 @@
 .modarPopup::-webkit-scrollbar-thumb:hover {background: #cacdcf;}/* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
 .modarPopup::-webkit-scrollbar-thumb:active {background: #cacdcf;}/* 실질적 스크롤 바를 클릭할 때 */
 .modarPopup .modarContainer{position: absolute;width: 100%;height: auto;min-height: 100%;display: -webkit-box;display: flex;-moz-justify-content: center;-ms-justify-content: center;-webkit-box-pack: center;justify-content: center;-ms-flex-pack: center;-moz-align-items: center;-ms-align-items: center;-webkit-box-align: center;align-items: center;padding: 40px 0;box-sizing: border-box;}
-.modarPopup .modarInner {position: relative;width: 800px;max-width: 100%;min-height: 460px;padding: 80px 60px 48px;background: #ECE8E1;box-sizing: border-box;-webkit-animation: slideOutDown 0.3s;animation: slideOutDown 0.3s;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
-.modarPopup .modarBody{display: block;}
+.modarPopup .modarInner {position: relative;width: 800px;max-width: 100%;min-height: 460px;padding: 80px 60px 48px;background: #ECE8E1;box-sizing: border-box;-webkit-animation: slideOutDown 0.3s;animation: slideOutDown 0.3s;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;overflow: hidden;}
+.modarPopup .modarBody{opacity: 1;height: 0;transition: 2.5s;-webkit-transition: 2.5s;}
 .jsModarClose {display: block;width: 100%;padding: 21px 30px;background-color: #FF4655;box-sizing: border-box;font-size: 20px;color: #fff;font-weight: 700;text-align: center;cursor: pointer;}
-.jsModarClose.disabled{background: #D9D5D2;color: #B1B1B1;}
+.jsModarClose.disabled{background: #D9D5D2;color: #B1B1B1;pointer-events: none;}
+.btn.disabled{background: #D9D5D2;color: #B1B1B1;}
 .btnCloseModar {position: absolute;top: 14px;right: 17px;width: 40px;height: 40px;background-image: url(../images/icon_modar_popup_close.png);background-position: center;background-repeat: no-repeat;text-indent: -9999px;overflow: hidden;cursor: pointer;}
 .modarPopup.show {opacity: 1;visibility: visible;-webkit-transition-delay: 0s;transition-delay: 0s;}
 .modarPopup.show .modarInner {-webkit-animation: slideInUp 0.3s 50ms;animation: slideInUp 0.3s 50ms;-webkit-animation-fill-mode: backwards;animation-fill-mode: backwards;}
 
-.firstPopupBox{opacity: 0;position: absolute;left: 0;top: 0;display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100%;height: 100%;padding-top: 30px;background: #ECE8E1;z-index: -1;transition: .4s;-webkit-transition: .4s;}
+.firstPopupBox{opacity: 0;position: absolute;left: 0;top: 0;width: 100%;height: 100%;padding: 80px 60px 48px;background: #ECE8E1;box-sizing: border-box;z-index: -1;transition: .5s;-webkit-transition: .5s;}
+.firstPopupBox .popupBoxImg{position: absolute;top: 135px;left: 50%;width: 540px;margin-left: -270px;text-align: center;}
+.firstPopupBox .popupTextLg{margin-bottom: 320px;}
+.firstPopupBox .popupBoxImg .popupBoxImgGif{display: none;}
+.firstPopupBox .popupBoxImg .popupBoxImgPng{display: block;}
+
 .modarPopup.firstPopupBoxOpen .modarInner{min-height: 680px;}
-.modarPopup.firstPopupBoxOpen .modarBody{display: none;}
-.modarPopup.firstPopupBoxOpen .firstPopupBox{opacity: 1;z-index: 11;}
-.firstPopupBox .popupBoxImg{max-width: 380px;margin: 0 auto;text-align: center;}
+.modarPopup .modarBody.on{opacity: 0;}
+.modarPopup .modarBody.heightauto{height: auto;}
+.modarPopup.firstPopupBoxOpen .firstPopupBox{opacity: 1;z-index: 12;-webkit-animation: fadeinout 3.5s linear forwards;animation: fadeinout 3.5s linear forwards;}
+.modarPopup.firstPopupBoxOpen .popupBoxImgGif{display: block;}
+.modarPopup.firstPopupBoxOpen .popupBoxImgPng{display: none;}
 
 .popupTextLg{margin-bottom: 10px;font-size: 72px;color: #222;line-height: 110%;font-weight: 400;text-align: center;font-family:"Black Han Sans", "Apple SD Gothic Neo";}
 .popupTextMd{margin-bottom: 10px;font-size: 24px;color: #222;line-height: 150%;font-weight: 700;text-align: center;}
@@ -72,6 +80,8 @@
 #modarCouponInfo .modarBody{padding-top: 80px;}
 #modarCouponInfo .tabBtnGroup{padding: 0 60px 38px;}
 #modarCouponInfo .couponInfoList{background: #CFC9C1;padding: 40px 60px;box-sizing: border-box;}
+
+
 
 /* popup */
 @-webkit-keyframes slideInUp {
@@ -124,5 +134,27 @@
         visibility: hidden;
         -webkit-transform: translate3d(0, 10%, 0);
         transform: translate3d(0, 10%, 0);
+    }
+}
+@-webkit-keyframes fadeinout {
+    0% {
+        opacity: 1;
+        }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeinout {
+    0% {
+        opacity: 1;
+        }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
