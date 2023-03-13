@@ -235,7 +235,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 #errorBtn {width: 280px;font-size: 20px;}
 
 /********** 발타강사페이지 ***********/
-.valtaTeacher{position: relative;background-size: cover;background-position: center;background-repeat: no-repeat;box-sizing: border-box;transition: 3.5s;-webkit-transition: 3.5s;}
+.valtaTeacher{position: relative;background-size: cover;background-position: center;background-repeat: no-repeat;box-sizing: border-box;overflow: hidden;transition: 3.5s;-webkit-transition: 3.5s;}
 .valtaTeacher.doenmoTeacher{background-image: url(../images/bg_valtaTeacher01.jpg);}
 .valtaTeacher.bunnyTeacher{background-image: url(../images/bg_valtaTeacher02.jpg);}
 .valtaTeacherInner{position: relative;width: 1440px;margin: 0 auto;padding: 170px 0 0;box-sizing: border-box;}
