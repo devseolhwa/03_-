@@ -2,9 +2,9 @@ $(document).ready(function(){
 
     skrollr.init();
     setTimeout(function(){
+        videoItem();
         svgEffect();
         textEffect();
-        videoItem();
     }, 1000);
     $(window).scroll(function(){
         svgEffect();
@@ -225,10 +225,13 @@ $(document).ready(function(){
     });
 
     // VAL포인트 특강
-    $(".videoBoard").masonry({
+    let videoBoard = new Masonry(".videoBoard", {
         itemSelector: ".videoItem",
-        fitwidth: true,
-        horizontalOrder: true
+        percentPosition: true,
+      });
+    imagesLoaded(".videoBoard").on("progress", function() {
+        videoBoard.layout();
+        
     });
     function videoItem(){
         $(".videoItem").each(function(){
@@ -243,5 +246,5 @@ $(document).ready(function(){
             });
         });
     }
-
+    
 });
