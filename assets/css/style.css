@@ -115,7 +115,6 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .svgEffect08.active{display: block !important;}
 .svgEffect08.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 2s linear forwards;}
 
-
 .textEffectHidden{overflow: hidden;}
 .textEffect{-webkit-transform: translateY(115%);transform: translateY(115%);-webkit-transition: -webkit-transform .65s cubic-bezier(.25,.46,.45,.94);transition: -webkit-transform .65s cubic-bezier(.25,.46,.45,.94);transition: transform .65s cubic-bezier(.25,.46,.45,.94);transition: transform .65s cubic-bezier(.25,.46,.45,.94),-webkit-transform .65s cubic-bezier(.25,.46,.45,.94);}
 .textEffect.active{-webkit-transform: translateY(0);transform: translateY(0);}
