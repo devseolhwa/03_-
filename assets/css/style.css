@@ -108,11 +108,11 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .svgEffect05.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 2s linear forwards;}
 .svgEffect06{bottom: 24px;right: 138px;}
 .teacherTab li.on .svgEffect06.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 5.5s linear forwards;}
-.svgEffect07{display: none;bottom: 35px;right: 152px;}
-.svgEffect07.active{display: block;}
+.svgEffect07{display: none !important;bottom: 35px;right: 152px;}
+.svgEffect07.active{display: block !important;}
 .teacherTab li.on .svgEffect07.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
-.svgEffect08{display: none;bottom: -9px;left: -4px;}
-.svgEffect08.active{display: block;}
+.svgEffect08{display: none !important;bottom: -9px;left: -4px;}
+.svgEffect08.active{display: block !important;}
 .svgEffect08.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 2s linear forwards;}
 
 
