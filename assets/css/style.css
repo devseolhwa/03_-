@@ -107,9 +107,9 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .svgEffect05{bottom: 0;left: -5px;}
 .svgEffect05.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 2s linear forwards;}
 .svgEffect06{bottom: 24px;right: 138px;}
-.teacherTab li.on .svgEffect06.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 5.5s linear forwards;}
+.teacherTab li.on .svgEffect06.active svg path, .teacherTab li a:hover .svgEffect06.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 5.5s linear forwards;}
 .svgEffect07{bottom: 35px;right: 152px;}
-.teacherTab li.on .svgEffect07.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
+.teacherTab li.on .svgEffect07.active svg path, .teacherTab li a:hover .svgEffect07.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
 .svgEffect08{bottom: -9px;left: -4px;}
 .svgEffect08.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 2s linear forwards;}
 
@@ -238,6 +238,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 
 /********** 발타강사페이지 ***********/
 .valtaTeacher{position: relative;background-size: cover;background-position: center;background-repeat: no-repeat;box-sizing: border-box;overflow: hidden;-webkit-transition: 3.5s;-moz-transition: 3.5s;-o-transition: 3.5s;transition: 3.5s;}
+.valtaTeacher:after{content: "";position: absolute;bottom: 0;width: 100%;height: 229px;background-image: url(../images/img_dim.png);background-position: center;background-repeat: repeat;z-index: 1;}
 .valtaTeacher.doenmoTeacher{background-image: url(../images/bg_valtaTeacher01.jpg);}
 .valtaTeacher.bunnyTeacher{background-image: url(../images/bg_valtaTeacher02.jpg);}
 .valtaTeacherInner{position: relative;width: 1440px;margin: 0 auto;padding: 170px 0 0;box-sizing: border-box;}
@@ -246,6 +247,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .teacherTab li {flex: 1;height: 110px;}
 .teacherTab li + li{margin-left: 20px;}
 .teacherTab li.bunnynav a{justify-content: space-between;padding: 5px 5px 5px 10px;}
+
 .teacherTab li.bunnynav .teacherImage{order: 2;}
 .teacherTab li.bunnynav .teacherWords{order: 1;}
 .teacherTab li a {position: relative;display: flex;padding: 5px;background: #ECE8E1;opacity: 0.4;align-items: center;box-sizing: border-box;transition: .5s;-webkit-transition: .5s;}
