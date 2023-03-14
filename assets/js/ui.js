@@ -18,6 +18,9 @@ $(document).ready(function(){
             $("body").addClass("mobileFilter");
             $(".videoItem").addClass("active");
             $(".floating").show();
+            $(".teacherTab li a").on("click", function () {
+                svgEffect();
+            });
         }else{
             //alert("PC");
             snapscroll();
