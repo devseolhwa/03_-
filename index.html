@@ -7,6 +7,7 @@
     <title>발로란트 사이VAL대학교</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
@@ -94,7 +95,7 @@
                     </ul><!-- teacherTab end -->
 
                     <div class="teacherDetail" id="teacherDetail01">
-                        <div class="teacherImg"><img src="assets/images/img_doenmoDetail.jpg" alt="김된모 사진"></div>
+                        <div class="teacherImg"><img src="assets/images/img_doenmoDetail.png" alt="김된모 사진"></div>
                         <div class="teacherTitle">
                             <p class="teacherName">김된모 Doenmo</p>
                             <p class="teacherText">
@@ -132,7 +133,7 @@
                     </div><!-- teacherDetail01 end -->
 
                     <div class="teacherDetail" id="teacherDetail02">
-                        <div class="teacherImg"><img src="assets/images/img_bunnyDetail.jpg" alt="버니버니 사진"></div>
+                        <div class="teacherImg"><img src="assets/images/img_bunnyDetail.png" alt="버니버니 사진"></div>
                         <div class="teacherTitle">
                             <p class="teacherName">버니버니 Bunny</p>
                             <p class="teacherText">
@@ -176,18 +177,18 @@
                     <form action="">
                         <div class="searchGroupInner">
                             <div class="searchInput">
-                                <input type="text" title="검색어 입력" placeholder="궁금한 발로란트 키워드를 검색해보세요!" value="아이스박스">
+                                <input type="text" title="검색어 입력" placeholder="궁금한 발로란트 키워드를 검색해보세요!" value="" id="searchInputText">
                             </div>
                             <button type="button" id="btnSearch"><img src="assets/images/icon_search.png" alt="검색버튼"></button>
                             <div class="relatedList">
-                                <ul>
+                                <!-- <ul>
                                     <li><a href="#"><span>연관</span>텍스트</a></li>
                                     <li><a href="#">연관<span>연관텍스트</span></a></li>
                                     <li><a href="#"><span>연관</span>텍스트</a></li>
                                     <li><a href="#">연관<span>연관텍스트</span></a></li>
                                     <li><a href="#"><span>연관</span>텍스트</a></li>
                                     <li><a href="#">연관<span>연관텍스트</span></a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </form>
@@ -378,6 +379,8 @@
 
     <script defer="defer" src="https://cdn.rgpub.io/public/live/riotbar/latest/kr-valorant-evergreen.ko_KR.js"></script><!-- 라이엇바 상하단 js -->
     <script src="assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/searchData.js"></script>
     <script src="assets/js/lib/gsap.min.js"></script>
     <script src="assets/js/lib/ScrollToPlugin.min.js"></script>
     <script src="assets/js/lib/ScrollTrigger.min.js"></script>

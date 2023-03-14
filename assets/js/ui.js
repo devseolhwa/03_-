@@ -211,8 +211,8 @@ $(document).ready(function(){
     });
 
     // VAL포인트 특강
-    let videoBoardCheck = $(".videoBoard").children().is(".videoItem");
-    if (videoBoardCheck) {
+    let videoBoardCheck = $(".videoBoard");
+    if (videoBoardCheck.length) {
         let $grid = $(".videoBoard").imagesLoaded(function() {
             $grid.masonry({
                 itemSelector: ".videoItem",
@@ -233,5 +233,43 @@ $(document).ready(function(){
             });
         });
     }
-    
+
+    // 자동완성 텍스트 설정은 searchData.js 파일에서 추가
+    let searchPageCheck = $("#searchInputText");
+    if(searchPageCheck.length) {
+        $("#searchInputText").autocomplete({ //오토 컴플릿트 시작
+            source : searchData, //source 는 자동 완성 대상
+            appendTo: ".relatedList",
+            select : function(event, ui) { //아이템 선택시
+                //console.log(ui.item);
+            },
+            focus : function(event, ui) { //포커스 가면
+                return false; //한글 에러 잡기용도로 사용됨
+            },
+            minLength: 1, //최소 글자수
+            autoFocus: true, //첫번째 항목 자동 포커스 기본값 false
+            classes: { //위젯 요소에 추가 할 클래스를 지정
+                "ui-autocomplete": "highlight",
+            },
+            delay: 500, //검색창에 글자 써지고 나서 autocomplete 창 뜰 때 까지 딜레이 시간(ms)
+            disabled: false, //자동완성 기능 끄기
+            position: { my: "left top", at: "left bottom", of: ".searchGroupInner"},
+            close : function(event){ //자동완성창 닫아질때 호출
+                //console.log(event);
+            }
+        }).autocomplete("instance")._renderItem = function( ul, item ) { //UI 컨트롤
+            let newText = String(item.value).replace(new RegExp(this.term, "gi"), "<span class='ui-state-highlight'>$&</span>");
+            return $("<li></li>")
+                .data("item.autocomplete", item)
+                .append("<div>" + newText + "</div>")
+                .appendTo(ul);
+        };
+    }
+    // hashtag
+    $(".hashtag button").on("click", function () {
+        $(this).addClass("on").siblings("button").removeClass("on");
+    });
 });
+
+
+    
