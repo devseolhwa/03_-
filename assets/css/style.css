@@ -326,17 +326,17 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .mobileFilter .premiumItem{height: 100%;}
 .mobileFilter .svgEffect01.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
 .mobileFilter .svgEffect02.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
-.mobileFilter .svgEffect03.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
-.mobileFilter .svgEffect04_1.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
-.mobileFilter .svgEffect04_2.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
-.mobileFilter .svgEffect04_3.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
-.mobileFilter .svgEffect04_4.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
-.mobileFilter .svgEffect05.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
-.mobileFilter .svgEffect08.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
+.mobileFilter .svgEffect03.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 1.5s linear forwards;}
+.mobileFilter .svgEffect04_1.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 30s linear forwards;}
+.mobileFilter .svgEffect04_2.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 30s linear forwards;}
+.mobileFilter .svgEffect04_3.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 30s linear forwards;}
+.mobileFilter .svgEffect04_4.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 30s linear forwards;}
+.mobileFilter .svgEffect05.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 2s linear forwards;}
 .mobileFilter .svgEffect06.active svg path{opacity: 0;}
 .mobileFilter .teacherTab li.on .svgEffect06.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 5.5s linear forwards;}
 .mobileFilter .svgEffect07.active svg path{opacity: 0;}
 .mobileFilter .teacherTab li.on .svgEffect07.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
+.mobileFilter .svgEffect08.active svg path{opacity: 1;stroke-dasharray: 2000;stroke-dashoffset: 2000;animation: effectUnder 3s linear forwards;}
 
 @media screen and (min-height: 1024px){
     .slideBox .slideItem{height: 100%;}
