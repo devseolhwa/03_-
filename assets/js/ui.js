@@ -35,10 +35,6 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).addClass("active");
     });
-    $(".itemBox").on("touchend", function (e) {
-        e.preventDefault();
-        $(this).removeClass("active");
-    });
 
     function svgEffect(){
         $(".svgEffect").each(function(){
