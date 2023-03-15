@@ -18,10 +18,12 @@ $(document).ready(function(){
             $("body").addClass("mobileFilter");
             $(".videoItem").addClass("active");
             $(".floating").show();
-            $(".btnGet").on("touchstart", function (e) {
+            document.addEventListener('touchstart', function (e) {
                 e.preventDefault();
-                $(this).parents(".itemBox").addClass("active");
             });
+            $(".btnGet").on("click", function () {
+                $(this).parents(".itemBox").addClass("active");
+            })
         }else{
             //alert("PC");
             snapscroll();
