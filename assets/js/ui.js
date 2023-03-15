@@ -18,6 +18,9 @@ $(document).ready(function(){
             $("body").addClass("mobileFilter");
             $(".videoItem").addClass("active");
             $(".floating").show();
+            document.querySelector(".btnGet").addEventListener("touchstart", function(e) {
+                e.preventDefault();
+            });
         }else{
             //alert("PC");
             snapscroll();
