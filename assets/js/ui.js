@@ -18,13 +18,13 @@ $(document).ready(function(){
             $("body").addClass("mobileFilter");
             $(".videoItem").addClass("active");
             $(".floating").show();
-            document.querySelector(".btnGet").addEventListener("touchstart", function(e) {
+            $(".btnGet").on("touchstart", function (e) {
                 e.preventDefault();
+                $(this).parents(".itemBox").addClass("active");
             });
         }else{
             //alert("PC");
             snapscroll();
-
             // floating 스크롤후 나타나기
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
