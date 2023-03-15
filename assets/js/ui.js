@@ -18,6 +18,10 @@ $(document).ready(function(){
             $("body").addClass("mobileFilter");
             $(".videoItem").addClass("active");
             $(".floating").show();
+            $(".itemBox").on("touchstart", function (e) {
+                e.preventDefault();
+                $(this).addClass("active").parents().siblings(".item ").children(".itemBox").removeClass("active");
+            });
         }else{
             //alert("PC");
             snapscroll();
@@ -31,10 +35,6 @@ $(document).ready(function(){
             });
         }
     }
-    $(".itemBox").on("touchstart", function (e) {
-        e.preventDefault();
-        $(this).addClass("active");
-    });
 
     function svgEffect(){
         $(".svgEffect").each(function(){
