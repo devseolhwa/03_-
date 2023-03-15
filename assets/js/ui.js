@@ -18,6 +18,7 @@ $(document).ready(function(){
             $("body").addClass("mobileFilter");
             $(".videoItem").addClass("active");
             $(".floating").show();
+            // 안드로이드 hover 이슈로 인해 touch 추가 
             $(".itemBox").on("touchstart", function (e) {
                 e.preventDefault();
                 $(this).addClass("active").parents().siblings(".item ").children(".itemBox").removeClass("active");

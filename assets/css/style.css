@@ -312,6 +312,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .videoBoard .videoItem .videoText .videoTag span:last-child{margin-right: 0;}
 .videoBoard .videoItem .videoText .videoTitle{margin-top: 4px;font-size: 24px;color: #090909;line-height: 1.5;font-weight: 700;text-align: left;word-break: keep-all;}
 .videoBoard .videoItem .videoText .videoName{margin-top: 9px;font-size: 16px;color: #5B5B5B;font-weight: 500;line-height: 170%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.boardNone{display: flex;align-items: center;justify-content: center;min-height: 363px;font-size: 28px;color: #5C5852;line-height: 150%;font-weight: 700;text-align: center;}
 
 .paging {text-align: center;display: flex;align-items: center;justify-content: center;}
 .paging button{display: block;width: 40px;height: 50px;line-height: 50px;margin: 0 10px;box-sizing: border-box;font-size: 50px;color: #C4C1BC;font-weight: 400;font-family: "Tungsten-Bold", "Apple SD Gothic Neo";text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.26);cursor: pointer;z-index: 10;}
