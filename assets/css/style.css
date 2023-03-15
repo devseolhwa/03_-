@@ -32,7 +32,7 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .effectLayer.front{z-index: 1;}
 .effectLayer.back{z-index: -1;}
 
-.inner{position: relative;width: 1440px;margin: 0 auto;padding: 170px 0 200px;box-sizing: border-box;}
+.inner{position: relative;width: 1440px;margin: 0 auto;padding: 170px 0 260px;box-sizing: border-box;}
 
 /* text */
 .titleSm{display: block;font-size: 44px;font-weight: 400;line-height: 1.3;font-family: "GangwonEduPower", "Apple SD Gothic Neo";text-align: center;}
@@ -197,7 +197,8 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .slideBox{position: relative;height: 100%;/* min-height: 380px; */box-sizing: border-box;margin-bottom: 0 !important;}
 .slideBox:before{content: "";position: absolute;left: 0;top: 0;display: block;width: 100%;height: 100%;background-image: url(../images/bg_slideBox.png);background-position: center 20%;background-size: auto 80%;background-repeat: no-repeat;opacity: 0.3;}
 .slideBox .slick-slide{padding: 0 20px;}
-.slideBox .slideItem{/* width: 330px !important; */width: auto;height: 100%;opacity: 0.8;text-align: center;-webkit-transition: opacity 0.3s, -webkit-transform 0.8s;transition: opacity 0.3s, transform 0.8s, -webkit-transform 0.8s;height: calc(100vh - 565px);}
+.slideBox .slick-slide:after{content: "";display: block;clear: both;}
+.slideBox .slideItem{/* width: 330px !important; */display: inline-block;width: auto;height: 100%;opacity: 0.8;text-align: center;-webkit-transition: opacity 0.3s, -webkit-transform 0.8s;transition: opacity 0.3s, transform 0.8s, -webkit-transform 0.8s;height: calc(100vh - 565px);}
 .slideBox .slideItem img{width: auto;height: auto;margin: 0 auto;transform: scale(0.7);-webkit-transition: opacity 0.3s, -webkit-transform 0.8s;transition: opacity 0.3s, transform 0.8s, -webkit-transform 0.8s;}
 .slideBox .slideItem .slideItemName{opacity: 0;font-size: 2.5vh;color: #ECE8E1;font-weight: 500;line-height: 150%;word-break: keep-all;text-align: center;-webkit-transition: opacity 0.2s, -webkit-transform 0.8s;transition: opacity 0.2s, transform 0.8s, -webkit-transform 0.8s;}
 

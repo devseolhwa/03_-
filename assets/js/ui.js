@@ -159,7 +159,7 @@ $(document).ready(function(){
         sections.forEach((section, i) => {
             ScrollTrigger.create({
                 trigger: section,
-                start: "top bottom-=1",
+                start: "10% bottom-=1",
                 end: "bottom top+=1",
                 //onEnter: () => goToSection(section, intoAnim),
                 onEnter: () => goToSection(section),
