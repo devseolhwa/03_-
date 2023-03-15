@@ -342,6 +342,11 @@ body{margin-top: 80px !important;overflow: auto !important;height: 100% !importa
 .mobileFilter .itemGroup .item.on .itemBox .btnGet{background: rgba(255, 24, 43, 0.8);transition: inherit;-webkit-transition: inherit;z-index: 2;}
 .mobileFilter .itemGroup .item.on .itemBox:hover .itemName{z-index: 3;}
 
+@media (hover: hover) {
+    .mobileFilter .itemGroup .item.on .itemBox .btnGet{background: rgba(255, 24, 43, 0.8);transition: inherit;-webkit-transition: inherit;z-index: 2;}
+    .mobileFilter .itemGroup .item.on .itemBox:hover .itemName{z-index: 3;}
+}
+
 @media screen and (min-height: 1024px){
     .slideBox .slideItem{height: 100%;}
 }
