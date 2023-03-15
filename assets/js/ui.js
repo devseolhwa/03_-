@@ -31,11 +31,13 @@ $(document).ready(function(){
             });
         }
     }
-    $(".btnGet").on("touchstart", function (e) {
-        $(this).parents(".itemBox").addClass("active");
+    $(".itemBox").on("touchstart", function (e) {
+        e.preventDefault();
+        $(this).addClass("active");
     });
-    $(".btnGet").on("touchend", function (e) {
-        $(this).parents(".itemBox").removeClass("active");
+    $(".itemBox").on("touchend", function (e) {
+        e.preventDefault();
+        $(this).removeClass("active");
     });
 
     function svgEffect(){
