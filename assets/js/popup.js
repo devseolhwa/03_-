@@ -120,7 +120,7 @@ if ($(".realitemSlide .slideItem").length == 1) {
         slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: true,
-        loop: false,
+        loop: true,
         speed: 800,
         autoplay: {
             delay: 3000,

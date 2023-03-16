@@ -25,7 +25,7 @@ $(document).ready(function(){
             });
         }else{
             //alert("PC");
-            snapscroll();
+            //snapscroll();
             // floating 스크롤후 나타나기
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
@@ -124,7 +124,7 @@ $(document).ready(function(){
     });
 
     // 스냅스크롤
-    function snapscroll(){
+    /* function snapscroll(){
         const sections = document.querySelectorAll(".section");
         const scrolling = {
             enabled: true,
@@ -166,7 +166,7 @@ $(document).ready(function(){
                 onEnterBack: () => goToSection(section)
             });
         });
-    }
+    } */
 
     // VAL타 강사
     $(".teacherTab li.on a").each(function () {

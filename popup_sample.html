@@ -45,6 +45,8 @@
             <button onclick="modarOpen('#modarGetoCoupon');">PC방 마일리지 게토</button>
             <button onclick="modarOpen('#modarPicaCoupon');">PC방 마일리지 피카</button>
             <button onclick="modarOpen('#modarCouponInfo');">쿠폰사용안내</button>
+            <button onclick="modarOpen('#modarItemWinnerVer1');">당첨자발표</button>
+            <button onclick="modarOpen('#modarItemWinnerVer2');">당첨자발표_이미지추가</button>
         </div>
 
         <!-- 인 아이템 경품 당첨 팝업 start -->
@@ -353,6 +355,54 @@
             </div><!-- modarContainer end -->
         </section>
         <!-- 쿠폰사용안내 end -->
+
+        <!-- 당첨자발표 팝업 ver1 start -->
+        <section id="modarItemWinnerVer1" class="modarPopup">
+            <div class="modarContainer">
+                <div class="modarInner">
+                    <div class="modarBody">
+                        <!-- 팝업내용영역 start -->
+                        <h5 class="popupTextXl mb30">프리미엄 보상<br />당첨자 발표</h5>
+                        <p class="popupTextMd">
+                            당첨자분들에 한해 개별로 발송된 SMS 문자 내<br />
+                            안내드린 주소로 4월 30일까지 배송지정보를 입력해주세요.
+                        </p>
+                        <p class="checkBox">
+                            <input type="checkbox" id="inputCloseModar1">
+                            <label for="inputCloseModar1">다시 보지 않기</label>
+                        </p>
+                        <button type="button" class="jsModarClose">닫기</button> 
+                    </div><!-- modarBody end -->
+                    <button type="button" class="btnCloseModar">닫기</button>                
+                </div><!-- modarInner end -->
+            </div><!-- modarContainer end -->
+        </section>
+        <!-- 당첨자발표 팝업 ver1 end -->
+
+        <!-- 당첨자발표 팝업 ver2 start -->
+        <section id="modarItemWinnerVer2" class="modarPopup">
+            <div class="modarContainer">
+                <div class="modarInner">
+                    <div class="modarBody">
+                        <!-- 팝업내용영역 start -->
+                        <p class="ta_c mb40"><img src="http://via.placeholder.com/300x200" alt=""></p>
+                        <h5 class="popupTextXl mb20">프리미엄 보상<br />당첨자 발표</h5>
+                        <p class="ta_c mb40"><img src="http://via.placeholder.com/680x200" alt=""></p>
+                        <p class="popupTextMd">
+                            당첨자분들에 한해 개별로 발송된 SMS 문자 내<br />
+                            안내드린 주소로 4월 30일까지 배송지정보를 입력해주세요.
+                        </p>
+                        <p class="checkBox">
+                            <input type="checkbox" id="inputCloseModar2">
+                            <label for="inputCloseModar2">다시 보지 않기</label>
+                        </p>
+                        <button type="button" class="jsModarClose">닫기</button> 
+                    </div><!-- modarBody end -->
+                    <button type="button" class="btnCloseModar">닫기</button>                
+                </div><!-- modarInner end -->
+            </div><!-- modarContainer end -->
+        </section>
+        <!-- 당첨자발표 팝업 ver2 end -->
 
     </div><!-- wrap end -->
 

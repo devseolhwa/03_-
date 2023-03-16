@@ -31,6 +31,7 @@
 .modarPopup.firstPopupBoxOpen .popupBoxImgGif{display: block;}
 .modarPopup.firstPopupBoxOpen .popupBoxImgPng{display: none;}
 
+.popupTextXl{margin-bottom: 10px;font-size: 92px;color: #222;line-height: 110%;font-weight: 400;text-align: center;font-family:"Black Han Sans", "Apple SD Gothic Neo";}
 .popupTextLg{margin-bottom: 10px;font-size: 72px;color: #222;line-height: 110%;font-weight: 400;text-align: center;font-family:"Black Han Sans", "Apple SD Gothic Neo";}
 .popupTextMd{margin-bottom: 10px;font-size: 24px;color: #222;line-height: 150%;font-weight: 700;text-align: center;}
 .popupTextSm{margin-bottom: 20px;font-size: 20px;color: #222;line-height: 150%;font-weight: 700;text-align: center;}
@@ -81,8 +82,12 @@
 #modarCouponInfo .modarBody{padding-top: 80px;}
 #modarCouponInfo .tabBtnGroup{padding: 0 60px 38px;}
 #modarCouponInfo .couponInfoList{background: #CFC9C1;padding: 40px 60px;box-sizing: border-box;}
-
-
+.checkBox{text-align: center;margin: 70px 0 30px;}
+.checkBox input[type="checkbox"]{position: absolute;width: 1px;height: 1px;padding: 0;margin: 0;overflow: hidden;clip: rect(0, 0, 0, 0);border: 0;}
+.checkBox input[type="checkbox"] + label{position: relative;display: inline-block;padding-left: 30px;box-sizing: border-box;font-size: 16px;color: #444;font-weight: 500;text-align: center;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;}
+.checkBox input[type="checkbox"] + label:before{content: " ";position: absolute;left: 0;top: 2px;display: block;width: 20px;height: 20px;border: 1px solid #444;box-sizing: border-box;text-align: center;vertical-align: middle;}
+.checkBox input[type="checkbox"] + label:after{content: " ";position: absolute;left: 2px;top: -6px;display: none;width: 21px;height: 28px;background-image: url(../images/icon_chk.png);background-repeat: no-repeat;background-position: center;box-sizing: border-box;text-align: center;vertical-align: middle;}
+.checkBox input[type="checkbox"]:checked + label:after {display: block;}
 
 /* popup */
 @-webkit-keyframes slideInUp {
