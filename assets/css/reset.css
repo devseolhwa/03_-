@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* font */
-@font-face {
+/* @font-face {
     font-family: "Pretendard";
     font-weight: 100;
     font-style: normal;
@@ -72,7 +72,7 @@
     src: url("fonts/Pretendard-Black.woff2") format("woff2"),
          url("fonts/Pretendard-Black.woff") format("woff");
     font-display: swap;
-}
+} */
 @font-face {
     font-family: "Tungsten-Bold";
     src: url("fonts/Tungsten-Bold.woff2") format("woff2"),
@@ -97,9 +97,9 @@
 }
 
 /* reset */
-*{font-family: "Pretendard", "Apple SD Gothic Neo", "돋움", "Dotum", Tahoma, Verdana, sans-serif;}
+*{font-family: /* "Pretendard", */ "Apple SD Gothic Neo", "돋움", "Dotum", Tahoma, Verdana, sans-serif;}
 html {width: 100%;height: 100%;background: #ECE8DF;}
-body {position: relative;font-size: 16px;color: #333;line-height: 1.5;font-family: "Pretendard", "Apple SD Gothic Neo", "돋움", "Dotum", Tahoma, Verdana, sans-serif;-webkit-animation: fade 0.5s ease-in-out both;animation: fade 0.5s ease-in-out both;}
+body {position: relative;font-size: 16px;color: #333;line-height: 1.5;font-family: /* "Pretendard", */ "Apple SD Gothic Neo", "돋움", "Dotum", Tahoma, Verdana, sans-serif;-webkit-animation: fade 0.5s ease-in-out both;animation: fade 0.5s ease-in-out both;}
 html, body, div, span, iframe, p, dl,  dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, button, select, table, th, td, article, aside, section, figure, figcaption, img {margin: 0;padding: 0;border: 0;}
 iframe {overflow: auto;width: 100%;border: 0;}
 table {width: 100%;border-collapse: separate;border-spacing: 0;font-size: inherit;}
